@@ -783,4 +783,38 @@ loadActive();
  const oldSave=saveObservation;saveObservation=function(o){oldSave(o);queueMicrotask(()=>focusStep('referee'))};toggle.onchange=()=>{$('refevalFastEntryStatus').textContent=toggle.checked?'Fast entry enabled.':'Normal Tab navigation.'};
 })();
 </script>
+
+<script id="refeval-observation-three-columns-update">
+
+(function installObservationThreeColumns(){
+ const $=id=>document.getElementById(id),form=$('obsForm');if(!form||$('refevalThreeColumnStyle'))return;
+ const style=document.createElement('style');style.id='refevalThreeColumnStyle';style.textContent=`
+ /* Keep the hidden selects as data sources, without duplicated dropdowns. */
+ .quick-select-native{display:none!important}
+ #obsForm.refeval-three-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+ #obsForm.refeval-three-columns>.refeval-column{grid-column:auto!important;min-width:0;align-self:start}
+ #obsForm.refeval-three-columns>.refeval-wide{grid-column:1/-1!important;min-width:0}
+ #obsForm.refeval-three-columns #videoIncidentPanel .video-incident-grid{grid-template-columns:minmax(0,1fr)}
+ #obsForm.refeval-three-columns #videoIncidentPanel input{min-width:0;width:100%}
+ #obsForm.refeval-three-columns #videoIncidentPanel .actions{gap:7px;align-items:flex-start}
+ #obsForm.refeval-three-columns #videoIncidentPanel .help{overflow-wrap:anywhere}
+ #obsForm.refeval-three-columns #categoryUnifiedCoreButtons,
+ #obsForm.refeval-three-columns #coreObservationButtons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ #obsForm.refeval-three-columns #categoryUnifiedCoreButtons button,
+ #obsForm.refeval-three-columns #coreObservationButtons button{min-width:0;width:100%;padding:8px;overflow-wrap:anywhere}
+ #obsForm.refeval-three-columns input,#obsForm.refeval-three-columns textarea,#obsForm.refeval-three-columns select{min-width:0}
+ #obsForm.refeval-three-columns .choice-group{gap:7px;align-content:start}
+ @media(min-width:701px) and (max-width:1099px){#obsForm.refeval-three-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:700px){#obsForm.refeval-three-columns{grid-template-columns:minmax(0,1fr);gap:14px}}
+ @media print{#obsForm.refeval-three-columns{display:none!important}}
+ `;document.head.append(style);form.classList.add('refeval-three-columns');
+ function makeColumn(element,order){if(!element)return;let field=element===form?null:element.closest('.field');if(element.id==='videoIncidentPanel')field=element;if(!field||field.parentElement!==form)return;field.classList.add('refeval-column');field.classList.remove('refeval-wide');field.style.order=String(order)}
+ makeColumn($('videoIncidentPanel'),10);makeColumn($('period'),20);makeColumn($('gameTime'),30);makeColumn($('position'),40);makeColumn($('assessment'),50);makeColumn($('categoryUnifiedCoreButtons')||$('coreObservationButtons'),60);
+ // Retain wide text and footer sections, including the optional detailed tag.
+ Array.from(form.children).forEach((field,index)=>{if(field.classList.contains('refeval-column'))return;field.classList.add('refeval-wide');field.style.order=String(70+index)});
+ const titles=[['period','3. Period'],['gameTime','4. Official game time'],['position','5. Position'],['assessment','6. Assessment']];
+ titles.forEach(([id,text])=>{const field=$(id)?.closest('.field'),label=field?.querySelector('label');if(label)label.textContent=text});
+})();
+
+</script>
 </body></html>
