@@ -1,9 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Referee Evaluator — Crew Evaluation</title><link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>RefEval — Referee Evaluation</title><link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet"><style>
 :root{--bg:#f7f6f2;--card:#fff;--soft:#f0eee8;--line:#d8d4cc;--text:#28251d;--muted:#6f6c66;--accent:#01696f;--accent2:#d7e7e4;--red:#962a50;--red2:#f3dfe6;--amber:#8b4a0c;--amber2:#f5e5d2;--green:#3f741f;--green2:#e0ecd9;--r:12px;--font:Satoshi,Arial,sans-serif}[data-theme=dark]{--bg:#171614;--card:#1f1e1b;--soft:#2a2824;--line:#44413b;--text:#e4e1db;--muted:#aaa69f;--accent:#69afb6;--accent2:#293f3f;--red:#df82ab;--red2:#432a35;--amber:#e1a263;--amber2:#433225;--green:#91c970;--green2:#293923}*{box-sizing:border-box}html,body{height:100%;margin:0}body{overflow:hidden;background:var(--bg);color:var(--text);font:16px/1.45 var(--font)}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.app{height:100dvh;display:grid;grid-template-columns:230px minmax(0,1fr);grid-template-rows:62px minmax(0,1fr)}.side{grid-row:1/3;background:var(--card);border-right:1px solid var(--line);padding:18px 14px;display:flex;flex-direction:column;min-height:0;overflow:auto}.brand{display:flex;align-items:center;gap:10px;padding:6px 8px 24px;font-weight:700;font-size:20px}.logo{width:32px;color:var(--accent)}nav{display:grid;gap:4px}.navbtn{display:flex;align-items:center;gap:10px;min-width:0;min-height:46px;border:0;border-radius:9px;background:transparent;color:var(--muted);padding:0 13px;text-align:left;font-weight:600}.nav-icon{display:block;width:22px;height:22px;flex:0 0 22px}.nav-label{display:inline}.navbtn:hover{background:var(--soft)}.navbtn.active{background:var(--accent2);color:var(--accent)}.side small{margin-top:auto;color:var(--muted);padding:8px}.top{display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid var(--line)}.top h1{font-size:18px}.iconbtn{width:44px;height:44px;border:1px solid var(--line);background:var(--card);border-radius:9px}.main{overflow:auto;min-width:0;min-height:0;padding:24px}.view{display:none;max-width:1180px;margin:auto}.view.active{display:block}.head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}.head h2{font-size:30px;line-height:1.1;margin:0}.head p{margin:5px 0 0;color:var(--muted)}.grid{display:grid;gap:16px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.span2{grid-column:span 2}.span3{grid-column:span 3}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}.card h3{margin:0 0 16px;font-size:19px}.field{display:grid;gap:6px;min-width:0}.field label,.smalllabel{font-size:12px;font-weight:700;color:var(--muted)}input,select,textarea{width:100%;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:9px 11px}textarea{min-height:100px;resize:vertical}.help{font-size:12px;color:var(--muted)}.btn{min-height:44px;border:1px solid transparent;border-radius:8px;padding:0 15px;font-weight:700}.primary{background:var(--accent);color:white}.secondary{background:var(--card);border-color:var(--line)}.danger{background:transparent;border-color:var(--red);color:var(--red)}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.voicehead{display:flex;align-items:center;justify-content:space-between}.voice{min-height:38px;border:1px solid var(--line);border-radius:8px;background:var(--soft);padding:0 12px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px}.voice svg{width:17px}.voice.listening{background:var(--red2);color:var(--red);border-color:var(--red)}.quick{display:flex;gap:7px;overflow:auto;margin-bottom:16px}.quick button{white-space:nowrap;min-height:36px;border:1px solid var(--line);border-radius:999px;background:var(--soft);padding:0 12px;font-size:12px;font-weight:700}.notice{background:var(--accent2);color:var(--accent);padding:12px 14px;border-radius:8px;margin-bottom:16px;font-size:14px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 10px}.stat{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px}.stat b{font-size:20px}.stat small{display:block;color:var(--muted)}.tablewrap{overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--soft);color:var(--muted);font-size:12px;white-space:nowrap}tr:last-child td{border-bottom:0}.pill{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700}.pos{background:var(--green2);color:var(--green)}.neg{background:var(--red2);color:var(--red)}.rev{background:var(--amber2);color:var(--amber)}.neu{background:var(--soft);color:var(--muted)}.rowbtn{border:0;background:transparent;color:var(--accent);padding:5px}.empty{text-align:center;color:var(--muted);padding:32px}.criteria{display:grid;gap:8px}.criterion{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:11px;display:grid;grid-template-columns:minmax(220px,1fr) 225px minmax(220px,1fr);align-items:center;gap:12px}.cname{display:flex;gap:9px;font-size:14px;font-weight:600}.cname b{color:var(--muted);width:24px}.ratings{display:flex;gap:4px}.ratings input{position:absolute;opacity:0;width:1px;min-height:1px}.ratings label{min-width:39px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:7px;font-size:12px;font-weight:700;cursor:pointer}.ratings input:checked+label{background:var(--accent);border-color:var(--accent);color:white}.ratings input:focus-visible+label{outline:2px solid var(--accent)}.criterion .evidence{min-height:38px;font-size:13px}.report{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:34px;margin-top:16px}.report h2{font-size:28px}.report h3{margin:28px 0 10px}.meta{display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--muted);padding-bottom:14px;border-bottom:1px solid var(--line)}.toast{position:fixed;right:20px;bottom:20px;background:var(--text);color:var(--bg);padding:11px 15px;border-radius:8px;opacity:0;transform:translateY(80px);transition:.2s;z-index:20}.toast.show{opacity:1;transform:none}.mobileNav{display:none}.hiddenfile{display:none}
 dialog{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:16px;width:min(660px,calc(100% - 24px));max-height:calc(100dvh - 32px);padding:0;overflow:auto}dialog::backdrop{background:#0008}.review-body{padding:20px}.review-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.review-top h2{margin:0;font-size:23px}.transcript{background:var(--soft);padding:14px;border-radius:9px;white-space:pre-wrap;overflow-wrap:anywhere}.review-footer{position:sticky;bottom:0;background:var(--card);padding:16px 20px;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap}.review-footer .primary{flex:1}.warning{color:var(--amber)}.needs-review{border-color:var(--amber);background:var(--amber2)}.error{color:var(--red);font-size:14px}.voice-entry{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.voice-entry .btn{font-size:13px}
 @media(max-width:900px){.app{grid-template-columns:76px minmax(0,1fr)}.brand span,.side small,#sideNav .nav-label{display:none}.brand{justify-content:center}#sideNav .navbtn{justify-content:center;padding:0}.criterion{grid-template-columns:minmax(0,1fr) 225px}.criterion .evidence{grid-column:1/3}}
 @media(max-width:700px){.app{grid-template-columns:minmax(0,1fr);grid-template-rows:58px minmax(0,1fr) calc(68px + env(safe-area-inset-bottom,0px))}.side{display:none}.top{grid-row:1;padding:0 15px}.main{grid-row:2;padding:15px}.mobileNav{grid-row:3;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}.mobileNav .navbtn{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;min-height:68px;padding:6px 4px;border-radius:0;font-size:12px;line-height:1.15}.mobileNav .nav-label{display:block;white-space:nowrap}.two,.three,.stats{grid-template-columns:minmax(0,1fr)}.span2,.span3{grid-column:auto}.head{align-items:start;flex-direction:column}.criterion{grid-template-columns:minmax(0,1fr)}.criterion .evidence{grid-column:auto}.card{padding:15px}.report{padding:17px}.toast{left:15px;right:15px;bottom:calc(82px + env(safe-area-inset-bottom,0px));text-align:center}.review-body{padding:16px}.review-footer{padding:12px 16px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}.review-footer .primary{flex-basis:100%}}
 @media print{body{height:auto;overflow:visible;background:#fff}.side,.top,.mobileNav,.head,.noPrint,dialog{display:none!important}.app,.main{display:block;height:auto;overflow:visible;padding:0}.view{display:none!important}#reportView.active{display:block!important}.report{border:0;padding:0;margin:0}}
+
 
 .quick-select-native{display:none!important}.choice-group{display:flex;flex-wrap:wrap;gap:7px;align-content:start;min-width:0}.choice-btn{min-height:44px;min-width:46px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--text);padding:8px 12px;font-size:14px;font-weight:700;line-height:1.2;touch-action:manipulation}.choice-btn:hover{border-color:var(--accent)}.choice-btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}.choice-group.needs-review{outline:1px solid var(--amber);outline-offset:4px;border-radius:6px}.crew-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;max-width:1180px;margin:0 auto 18px}.crew-tabs{display:flex;flex-wrap:wrap;gap:8px}.crew-label{font-size:12px;color:var(--muted);font-weight:700}.crew-tab{min-height:44px;border:1px solid var(--line);border-radius:8px;padding:8px 13px;background:var(--soft);font-weight:700}.crew-tab[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}.roster-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}.ref-report{border-top:2px solid var(--accent);margin-top:28px;padding-top:16px}.ref-report h2{margin-top:0}.report-intro{color:var(--muted)}.ref-report p{white-space:pre-line}.report-warning{font-size:12px;color:var(--muted)}@media(max-width:700px){.choice-btn{padding:10px 13px;min-height:46px}.roster-fields{grid-template-columns:1fr}.crew-tabs{width:100%}.crew-tab{flex:1}.crew-bar{padding:12px}.crew-bar .help{width:100%}}@media print{.crew-bar{display:none!important}.ref-report{break-before:page}.ref-report:first-of-type{break-before:auto}.ref-report h2,.ref-report h3{break-after:avoid}}
 .observation-footer{align-items:flex-start;gap:12px}.auto-criterion-footer{display:grid;gap:7px;margin-left:auto;flex:1 1 380px;max-width:680px;min-width:0;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--soft)}.auto-criterion-footer label{font-size:13px;font-weight:600}.auto-criterion-footer .help{overflow-wrap:anywhere}.auto-criterion-footer>button{justify-self:end}.observation-footer #formMsg{order:3;flex-basis:100%}@media(max-width:700px){.auto-criterion-footer{flex-basis:100%;margin-left:0}.auto-criterion-footer>button{justify-self:start}}</style></head><body><div class="app"><aside class="side"><div class="brand"><svg class="logo" viewBox="0 0 40 40" fill="none"><path d="M8 6h18l6 6v22H8zM25 6v8h7M14 20h12M14 26h9" stroke="currentColor" stroke-width="3"/></svg><span>RefEval</span></div><nav id="sideNav" aria-label="Main navigation"></nav><small>Export JSON before closing</small></aside><header class="top"><h1 id="title">Game setup</h1><button id="theme" class="iconbtn" aria-label="Toggle theme">◐</button></header><main class="main"><div class="crew-bar noPrint"><span class="crew-label">Evaluating</span><div class="crew-tabs" id="crewTabs" role="group" aria-label="Choose referee"></div><span class="help" id="activeRefHint"></span></div>
@@ -42,6 +43,7 @@ $('#copy').onclick=()=>copyText(textReport());$('#copyPrompt').onclick=()=>copyT
 function hydrate(){initFields();syncRatings();renderObs();renderReport()}
 $('#import').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader;r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.meta||!Array.isArray(d.obs))throw Error();if(d.obs.some(o=>!Number.isInteger(o.category)||o.category<0||o.category>=40))throw Error();S={meta:{...S.meta,...d.meta},obs:d.obs,ratings:(d.ratings?.length===40?d.ratings:blank()).map(x=>({rating:['+2','0','-2','-4','-5'].includes(x.rating)?x.rating:'0',evidence:String(x.evidence||'')})),comments:{...S.comments,...d.comments}};resetForm();hydrate();toast('Imported')}catch{toast('Invalid file')}};r.readAsText(f);e.target.value=''};
 function clearAll(){if(confirm('Clear the complete evaluation?'))location.reload()}$('#clear').onclick=clearAll;$('#newBtn').onclick=clearAll;$('#theme').onclick=()=>document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+
 
 function normalizeVoice(s){let t=s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,' ').replace(/-/g,' ');const nums={zero:0,oh:0,one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,eleven:11,twelve:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fifty:50,un:1,une:1,deux:2,trois:3,quatre:4,cinq:5,sept:7,huit:8,neuf:9,dix:10,onze:11,douze:12,treize:13,quatorze:14,quinze:15,seize:16,vingt:20,trente:30,quarante:40,cinquante:50};t=t.replace(/\b(first|premier|premiere)\b/g,'1').replace(/\b(second|deuxieme)\b/g,'2').replace(/\b(third|troisieme)\b/g,'3').replace(/\b(fourth|quatrieme)\b/g,'4');t=t.replace(/\b[a-z]+\b/g,w=>Object.hasOwn(nums,w)?String(nums[w]):w);t=t.replace(/\b(20|30|40|50)\s+(?:et\s+)?([1-9])\b/g,(_,a,b)=>String(+a + +b));return t.replace(/\s+/g,' ').trim()}
 const criterionRules=[
@@ -82,24 +84,27 @@ $('#speak').onclick=startVoice;$('#speakAgain').onclick=()=>{closeReview();start
 $('#typedVoice').onclick=()=>{voiceDefaults=formDefaults();reviewOrigin=edit;$('#voiceTranscript').value='';setReview(parseVoice('',voiceDefaults));$('#vsituation').value='';$('#voiceReview').showModal();$('#voiceTranscript').focus()};
 initNav();initCriteria();initFields();renderObs();renderReport();
 
+
 function installQuickSelections(){
  const nativeValue=Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype,'value');
  for(const id of ['period','position','assessment','vperiod','vposition','vassessment']){
-  const select=document.getElementById(id);if(!select)continue;
-  const label=document.querySelector(`label[for="${id}"]`),group=document.createElement('div');
-  group.className='choice-group';group.id=id+'Buttons';group.setAttribute('role','group');
-  if(label){label.id=id+'Label';label.removeAttribute('for');group.setAttribute('aria-labelledby',label.id)}
-  select.classList.add('quick-select-native');select.setAttribute('aria-hidden','true');select.tabIndex=-1;
-  const buttons=Array.from(select.options,o=>{const b=document.createElement('button');b.type='button';b.className='choice-btn';b.dataset.value=o.value;b.textContent=o.value==='—'?'Unspecified':o.textContent;b.onclick=()=>{select.value=o.value;select.dispatchEvent(new Event('input',{bubbles:true}));select.dispatchEvent(new Event('change',{bubbles:true}))};group.append(b);return b});
-  const sync=()=>{buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===select.value)));group.classList.toggle('needs-review',select.classList.contains('needs-review'))};
-  Object.defineProperty(select,'value',{configurable:true,get(){return nativeValue.get.call(this)},set(v){nativeValue.set.call(this,v);sync()}});
-  select.after(group);select.addEventListener('change',sync);select.addEventListener('input',sync);new MutationObserver(sync).observe(select,{attributes:true,attributeFilter:['class']});
-  select.focus=()=>{(buttons.find(b=>b.dataset.value===select.value)||buttons[0]).focus()};
-  group.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(e.key))return;const i=buttons.indexOf(document.activeElement);if(i<0)return;e.preventDefault();const n=e.key==='Home'?0:e.key==='End'?buttons.length-1:(i+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+buttons.length)%buttons.length;buttons[n].focus();buttons[n].click()});
-  if(select.form)select.form.addEventListener('reset',()=>queueMicrotask(sync));sync();
+ const select=document.getElementById(id);if(!select)continue;
+ const label=document.querySelector(`label[for="${id}"]`),group=document.createElement('div');
+ group.className='choice-group';group.id=id+'Buttons';group.setAttribute('role','group');
+ if(label){label.id=id+'Label';label.removeAttribute('for');group.setAttribute('aria-labelledby',label.id)}
+ select.classList.add('quick-select-native');select.setAttribute('aria-hidden','true');select.tabIndex=-1;
+ const buttons=Array.from(select.options,o=>{const b=document.createElement('button');b.type='button';b.className='choice-btn';b.dataset.value=o.value;b.textContent=o.value==='—'?'Unspecified':o.textContent;b.onclick=()=>{select.value=o.value;select.dispatchEvent(new Event('input',{bubbles:true}));select.dispatchEvent(new Event('change',{bubbles:true}))};group.append(b);return b});
+ const sync=()=>{buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===select.value)));group.classList.toggle('needs-review',select.classList.contains('needs-review'))};
+ Object.defineProperty(select,'value',{configurable:true,get(){return nativeValue.get.call(this)},set(v){nativeValue.set.call(this,v);sync()}});
+ select.after(group);select.addEventListener('change',sync);select.addEventListener('input',sync);new MutationObserver(sync).observe(select,{attributes:true,attributeFilter:['class']});
+ select.focus=()=>{(buttons.find(b=>b.dataset.value===select.value)||buttons[0]).focus()};
+ group.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(e.key))return;const i=buttons.indexOf(document.activeElement);if(i<0)return;e.preventDefault();const n=e.key==='Home'?0:e.key==='End'?buttons.length-1:(i+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+buttons.length)%buttons.length;buttons[n].focus();buttons[n].click()});
+ if(select.form)select.form.addEventListener('reset',()=>queueMicrotask(sync));sync();
  }
 }
 installQuickSelections();
+
+
 
 
 // Shared match, independent referee evaluations.
@@ -125,7 +130,7 @@ function loadActive(){
  const refInput=$('#referee'),old=refInput.oninput;
  refInput.oninput=()=>{old();commitActive();refreshCrewUI(false)};
  for(const k of ['game','competition','date','language','evaluator']){
-  const el=$('#'+k),handler=el.oninput;el.oninput=()=>{handler();commitActive()};
+ const el=$('#'+k),handler=el.oninput;el.oninput=()=>{handler();commitActive()};
  }
  refreshCrewUI(true);renderReport();
 }
@@ -135,10 +140,10 @@ function refreshCrewUI(roster=true){
  $$('[data-ref]').forEach(b=>b.onclick=()=>switchReferee(+b.dataset.ref));
  $('#activeRefHint').textContent=`${refName(Match.evaluations[Match.active],Match.active)} — observations and ratings below belong only to this referee.`;
  if(roster){
-  $('#rosterFields').innerHTML=Match.evaluations.map((e,i)=>`<div class="field"><label for="refName${i}">Referee ${i+1}</label><input id="refName${i}" data-name="${i}" value="${esc(e.meta.referee)}" placeholder="Full name"></div>`).join('');
-  $$('[data-name]').forEach(input=>input.oninput=()=>{commitActive();const i=+input.dataset.name;Match.evaluations[i].meta.referee=input.value;if(i===Match.active){S.meta.referee=input.value;$('#referee').value=input.value}refreshCrewUI(false);renderReport()});
+ $('#rosterFields').innerHTML=Match.evaluations.map((e,i)=>`<div class="field"><label for="refName${i}">Referee ${i+1}</label><input id="refName${i}" data-name="${i}" value="${esc(e.meta.referee)}" placeholder="Full name"></div>`).join('');
+ $$('[data-name]').forEach(input=>input.oninput=()=>{commitActive();const i=+input.dataset.name;Match.evaluations[i].meta.referee=input.value;if(i===Match.active){S.meta.referee=input.value;$('#referee').value=input.value}refreshCrewUI(false);renderReport()});
  }else{
-  $$('[data-name]').forEach(input=>{if(document.activeElement!==input)input.value=Match.evaluations[+input.dataset.name].meta.referee});
+ $$('[data-name]').forEach(input=>{if(document.activeElement!==input)input.value=Match.evaluations[+input.dataset.name].meta.referee});
  }
 }
 function unfinished(){return !!edit||!!$('#gameTime').value.trim()||!!$('#situation').value.trim()||!!$('#remark').value.trim()}
@@ -210,6 +215,7 @@ $('#voiceStatus').textContent='Voice observations are assigned to the active ref
 $('#formTitle').insertAdjacentHTML('afterend','<p class="help">The selected referee tab determines who receives this observation.</p>');
 loadActive();
 
+
 </script>
 <script id="refeval-referee-section-update">
 (function updateRefereeSection(){
@@ -240,7 +246,9 @@ loadActive();
 })();
 </script>
 
+
 <script id="refeval-auto-criterion-update">
+
 
 (function installAutomaticCriterion(){
  if(typeof C==='undefined'||typeof criterionRules==='undefined'||typeof normalizeVoice!=='function')return;
@@ -255,25 +263,25 @@ loadActive();
  panel.append(label,status,choices,retry);panel.className='auto-criterion-footer';const footer=document.getElementById('saveObs').parentElement;footer.classList.add('observation-footer');footer.append(panel);
  let manual=false,applying=false,timer;
  function detect(text){
-  const t=normalizeVoice(text),explicit=t.match(/\b(?:criterion|criteria|critere)\s*(\d{1,2})\b/);
-  if(explicit&&+explicit[1]>=1&&+explicit[1]<=C.length)return [+explicit[1]-1];
-  const exact=C.map((name,i)=>({i,text:normalizeVoice(name)})).filter(x=>t.includes(x.text)).map(x=>x.i);if(exact.length)return [...new Set(exact)];
-  let matches=criterionRules.filter(([i,re])=>{re.lastIndex=0;return re.test(t)}).map(([i])=>i);
-  for(const [i,re] of [[8,/\b(lead performance|performance du lead)\b/],[9,/\b(centre performance|center performance|performance du centre)\b/],[10,/\b(trail performance|performance du trail)\b/],[34,/\b(contact criteria|contact criterion|critere de contact|criteres de contact)\b/]])if(re.test(t))matches.push(i);
-  matches=[...new Set(matches)];if(!matches.length&&/\b(no call|non appel)\b/.test(t))matches=[35];return matches;
+ const t=normalizeVoice(text),explicit=t.match(/\b(?:criterion|criteria|critere)\s*(\d{1,2})\b/);
+ if(explicit&&+explicit[1]>=1&&+explicit[1]<=C.length)return [+explicit[1]-1];
+ const exact=C.map((name,i)=>({i,text:normalizeVoice(name)})).filter(x=>t.includes(x.text)).map(x=>x.i);if(exact.length)return [...new Set(exact)];
+ let matches=criterionRules.filter(([i,re])=>{re.lastIndex=0;return re.test(t)}).map(([i])=>i);
+ for(const [i,re] of [[8,/\b(lead performance|performance du lead)\b/],[9,/\b(centre performance|center performance|performance du centre)\b/],[10,/\b(trail performance|performance du trail)\b/],[34,/\b(contact criteria|contact criterion|critere de contact|criteres de contact)\b/]])if(re.test(t))matches.push(i);
+ matches=[...new Set(matches)];if(!matches.length&&/\b(no call|non appel)\b/.test(t))matches=[35];return matches;
  }
  function apply(i){applying=true;category.value=String(i);category.dispatchEvent(new Event('input',{bubbles:true}));category.dispatchEvent(new Event('change',{bubbles:true}));applying=false}
  function update(){
-  clearTimeout(timer);choices.replaceChildren();
-  if(!toggle.checked){status.textContent='Automatic suggestions are off. Choose the criterion manually.';return}
-  if(manual){status.textContent='Manual criterion retained: '+C[+category.value]+'. Use automatic suggestion to unlock it.';return}
-  const text=[situation.value,remark.value].filter(Boolean).join(' ').trim();
-  if(!text){status.textContent='Type a situation or remark. Your manual selection takes priority.';return}
-  const matches=detect(text);
-  if(matches.length===1){apply(matches[0]);status.textContent='Suggested criterion '+(matches[0]+1)+': '+C[matches[0]]+'. Check before saving.';return}
-  if(!matches.length){status.textContent='No clear match. Current criterion unchanged; select it manually.';return}
-  status.textContent='Multiple criteria match. Current selection unchanged. Choose the main criterion:';
-  matches.forEach(i=>{const b=document.createElement('button');b.type='button';b.className='btn secondary';b.textContent=(i+1)+'. '+C[i];b.onclick=()=>{apply(i);manual=true;update()};choices.append(b)});
+ clearTimeout(timer);choices.replaceChildren();
+ if(!toggle.checked){status.textContent='Automatic suggestions are off. Choose the criterion manually.';return}
+ if(manual){status.textContent='Manual criterion retained: '+C[+category.value]+'. Use automatic suggestion to unlock it.';return}
+ const text=[situation.value,remark.value].filter(Boolean).join(' ').trim();
+ if(!text){status.textContent='Type a situation or remark. Your manual selection takes priority.';return}
+ const matches=detect(text);
+ if(matches.length===1){apply(matches[0]);status.textContent='Suggested criterion '+(matches[0]+1)+': '+C[matches[0]]+'. Check before saving.';return}
+ if(!matches.length){status.textContent='No clear match. Current criterion unchanged; select it manually.';return}
+ status.textContent='Multiple criteria match. Current selection unchanged. Choose the main criterion:';
+ matches.forEach(i=>{const b=document.createElement('button');b.type='button';b.className='btn secondary';b.textContent=(i+1)+'. '+C[i];b.onclick=()=>{apply(i);manual=true;update()};choices.append(b)});
  }
  function schedule(){clearTimeout(timer);timer=setTimeout(update,350)}
  remark.addEventListener('input',schedule);situation.addEventListener('input',schedule);
@@ -285,9 +293,12 @@ loadActive();
  update();
 })();
 
+
 </script>
 
+
 <script id="refeval-observation-controls-update">
+
 
 (function installObservationControls(){
  if(document.getElementById('observationRefereePicker'))return;
@@ -306,17 +317,17 @@ loadActive();
  if(title&&title.parentElement===card)title.after(picker);else card.prepend(picker);
  const outsideBars=Array.from(document.querySelectorAll('.crew-bar')).filter(bar=>!view.contains(bar));
  function updatePicker(){
-  choices.replaceChildren();
-  Match.evaluations.forEach((evaluation,index)=>{
-   const name=String(evaluation.meta.referee||'').trim(),b=document.createElement('button');
-   b.type='button';b.className='btn '+(index===Match.active?'primary':'secondary');b.textContent=name||'Enter name in Setup';b.dataset.observationRef=String(index);
-   b.setAttribute('aria-pressed',String(index===Match.active));b.disabled=!name;
-   if(!name){b.title='Enter this referee’s name in Game setup';b.style.opacity='.55'}
-   b.onclick=()=>{switchReferee(index);updatePicker()};choices.append(b);
-  });
-  const current=String(Match.evaluations[Match.active]?.meta.referee||'').trim();
-  note.textContent=current?'Observations and voice entries will be assigned to '+current+'.':'Enter the referee names in Setup before recording observations.';
-  const remarksActive=view.classList.contains('active');outsideBars.forEach(bar=>{bar.style.display=remarksActive?'none':''});
+ choices.replaceChildren();
+ Match.evaluations.forEach((evaluation,index)=>{
+ const name=String(evaluation.meta.referee||'').trim(),b=document.createElement('button');
+ b.type='button';b.className='btn '+(index===Match.active?'primary':'secondary');b.textContent=name||'Enter name in Setup';b.dataset.observationRef=String(index);
+ b.setAttribute('aria-pressed',String(index===Match.active));b.disabled=!name;
+ if(!name){b.title='Enter this referee’s name in Game setup';b.style.opacity='.55'}
+ b.onclick=()=>{switchReferee(index);updatePicker()};choices.append(b);
+ });
+ const current=String(Match.evaluations[Match.active]?.meta.referee||'').trim();
+ note.textContent=current?'Observations and voice entries will be assigned to '+current+'.':'Enter the referee names in Setup before recording observations.';
+ const remarksActive=view.classList.contains('active');outsideBars.forEach(bar=>{bar.style.display=remarksActive?'none':''});
  }
  const previousRefresh=refreshCrewUI;refreshCrewUI=function(roster=true){previousRefresh(roster);updatePicker()};
  const previousLoad=loadActive;loadActive=function(){previousLoad();updatePicker()};
@@ -326,9 +337,12 @@ loadActive();
  updatePicker();
 })();
 
+
 </script>
 
+
 <script id="refeval-unified-workflow-update">
+
 
 (function installUnifiedRefEval(){
  if(document.getElementById('refevalUnifiedPanel'))return;
@@ -338,8 +352,10 @@ loadActive();
  const CORE=[['CNT','Contact judgment',34],['RUL','Rules and violations',39],['COV','Coverage and responsibility',12],['CTL','Game control',27],['COOP','Crew cooperation',36],['ADM','Game administration',38]];
  const MAP={2:'CTL',3:'CTL',8:'COV',9:'COV',10:'COV',12:'COV',13:'RUL',14:'RUL',15:'RUL',16:'RUL',17:'CNT',18:'CNT',19:'CNT',20:'CNT',21:'CNT',22:'COV',23:'CNT',24:'CNT',25:'CNT',26:'CTL',27:'CTL',28:'ADM',29:'CNT',30:'ADM',31:'ADM',32:'CTL',33:'CTL',34:'CNT',35:'CNT',36:'COOP',37:'CTL',38:'ADM',39:'RUL'};
 
+
  function compactReport(text){return String(text||'').replace(/\bact of shooting\b|action de tir/gi,'AOS').replace(/\bout[ -]of[ -]bounds\b|hors limites/gi,'OOB').replace(/\bfree throws?\b|lancers? francs?/gi,'FT').replace(/\btechnical fouls?\b|fautes? techniques?/gi,'TF').replace(/\bunsportsmanlike fouls?\b|fautes? antisportives?/gi,'UF').replace(/\bno[ -]call\b/gi,'NC')}
  function roleAbbreviation(position){return {Lead:'L',Centre:'C',Trail:'T'}[position]||position}
+
 
  const SCALE=['N/O','+2','0','-2','-4','-5'];
  const groupSelector='.choice-group,.unified-core-buttons,.crew-tabs,#observationRefereeChoices,.unified-ratings';
@@ -347,12 +363,12 @@ loadActive();
  const chars=s=>Array.from(String(s).replace(/\r\n?/g,'\n')).length;
  const copy=x=>JSON.parse(JSON.stringify(x));
  function init(e){
-  if(!e.coreRatings||typeof e.coreRatings!=='object')e.coreRatings={};
-  CORE.forEach(([id])=>{const r=e.coreRatings[id];e.coreRatings[id]={rating:SCALE.includes(r?.rating)?r.rating:'N/O',evidence:String(r?.evidence||'')}});
-  if(!Array.isArray(e.mechanicsRatings)||e.mechanicsRatings.length!==3)e.mechanicsRatings=MECH.map(()=>({rating:'N/O',evidence:''}));
-  e.mechanicsEnabled=!!e.mechanicsEnabled;
-  e.mechanicsRatings=e.mechanicsRatings.map(r=>({rating:SCALE.includes(r?.rating)?r.rating:'N/O',evidence:String(r?.evidence||'')}));
-  e.shortReport=String(e.shortReport||'');e.shortReportMode=e.shortReportMode==='manual'?'manual':'auto';
+ if(!e.coreRatings||typeof e.coreRatings!=='object')e.coreRatings={};
+ CORE.forEach(([id])=>{const r=e.coreRatings[id];e.coreRatings[id]={rating:SCALE.includes(r?.rating)?r.rating:'N/O',evidence:String(r?.evidence||'')}});
+ if(!Array.isArray(e.mechanicsRatings)||e.mechanicsRatings.length!==3)e.mechanicsRatings=MECH.map(()=>({rating:'N/O',evidence:''}));
+ e.mechanicsEnabled=!!e.mechanicsEnabled;
+ e.mechanicsRatings=e.mechanicsRatings.map(r=>({rating:SCALE.includes(r?.rating)?r.rating:'N/O',evidence:String(r?.evidence||'')}));
+ e.shortReport=String(e.shortReport||'');e.shortReportMode=e.shortReportMode==='manual'?'manual':'auto';
  }
  function active(){const e=Match.evaluations[Match.active];init(e);return e}
  function coreFor(o){return CORE.some(([id])=>id===o.core)?o.core:MAP[o.category]||''}
@@ -376,12 +392,12 @@ loadActive();
  // Core buttons and optional detailed observation tags, including voice review.
  const nativeSelect=Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype,'value');
  function addCorePicker(id,voice){
-  const select=$(id),field=select.closest('.field'),panel=document.createElement('div');panel.className='field '+(voice?'span2':'span3');panel.innerHTML='<div class="smalllabel" id="'+id+'UnifiedCoreLabel">Core criterion</div><div class="unified-core-buttons" id="'+id+'UnifiedCoreButtons" role="group" aria-labelledby="'+id+'UnifiedCoreLabel"></div>';
-  field.before(panel);
-  const details=document.createElement('details');details.className='unified-optional '+(voice?'span2':'span3');details.innerHTML='<summary>Detailed situation tag — optional</summary>';field.before(details);details.append(field);field.classList.remove('span2');
-  const draw=()=>{const selected=voice?MAP[+select.value]||'':selectedCore||MAP[+select.value]||'';$(id+'UnifiedCoreButtons').innerHTML=CORE.map(([key,name])=>`<button type="button" class="unified-core-button" data-unified-core="${key}" aria-pressed="${selected===key}">${key}<small>${esc(name)}</small></button>`).join('');$(id+'UnifiedCoreButtons').querySelectorAll('button').forEach(b=>b.onclick=()=>{const c=CORE.find(([key])=>key===b.dataset.unifiedCore);select.value=String(c[2]);select.dispatchEvent(new Event('change',{bubbles:true}));if(!voice){selectedCore=c[0];coreLock=true}draw()});keyboardRefresh()};
-  Object.defineProperty(select,'value',{configurable:true,get(){return nativeSelect.get.call(this)},set(v){nativeSelect.set.call(this,v);if(!voice&&!coreLock)selectedCore=MAP[Number(v)]||'';draw()}});
-  select.addEventListener('change',()=>{if(!voice){selectedCore=MAP[+select.value]||'';coreLock=false}draw()});draw();return draw;
+ const select=$(id),field=select.closest('.field'),panel=document.createElement('div');panel.className='field '+(voice?'span2':'span3');panel.innerHTML='<div class="smalllabel" id="'+id+'UnifiedCoreLabel">Core criterion</div><div class="unified-core-buttons" id="'+id+'UnifiedCoreButtons" role="group" aria-labelledby="'+id+'UnifiedCoreLabel"></div>';
+ field.before(panel);
+ const details=document.createElement('details');details.className='unified-optional '+(voice?'span2':'span3');details.innerHTML='<summary>Detailed situation tag — optional</summary>';field.before(details);details.append(field);field.classList.remove('span2');
+ const draw=()=>{const selected=voice?MAP[+select.value]||'':selectedCore||MAP[+select.value]||'';$(id+'UnifiedCoreButtons').innerHTML=CORE.map(([key,name])=>`<button type="button" class="unified-core-button" data-unified-core="${key}" aria-pressed="${selected===key}">${key}<small>${esc(name)}</small></button>`).join('');$(id+'UnifiedCoreButtons').querySelectorAll('button').forEach(b=>b.onclick=()=>{const c=CORE.find(([key])=>key===b.dataset.unifiedCore);select.value=String(c[2]);select.dispatchEvent(new Event('change',{bubbles:true}));if(!voice){selectedCore=c[0];coreLock=true}draw()});keyboardRefresh()};
+ Object.defineProperty(select,'value',{configurable:true,get(){return nativeSelect.get.call(this)},set(v){nativeSelect.set.call(this,v);if(!voice&&!coreLock)selectedCore=MAP[Number(v)]||'';draw()}});
+ select.addEventListener('change',()=>{if(!voice){selectedCore=MAP[+select.value]||'';coreLock=false}draw()});draw();return draw;
  }
  let drawObservationCore=()=>{};
  drawObservationCore=addCorePicker('category',false);if($('vcategory'))addCorePicker('vcategory',true);
@@ -395,14 +411,14 @@ loadActive();
  const subheading=$('criteriaView').querySelector('.head p');if(subheading)subheading.textContent='Core on-court performance, plus optional mechanics and detailed after-game assessment';
  function ratingButtons(r,key,type){return SCALE.map(value=>`<button type="button" data-unified-rate="${value}" data-unified-key="${key}" data-unified-type="${type}" aria-pressed="${value===r.rating}">${value}</button>`).join('')}
  function drawAssessment(){
-  const e=active();corePanel.innerHTML=CORE.map(([id,name])=>{const r=e.coreRatings[id],situations=ordered(e).filter(o=>coreFor(o)===id);return `<article class="unified-core-row"><h3>${id} — ${esc(name)}</h3><div class="unified-ratings" role="group" aria-label="${esc(name)} rating">${ratingButtons(r,id,'core')}</div><label class="smalllabel" for="unifiedEvidence${id}">Evaluator evidence</label><textarea id="unifiedEvidence${id}" data-unified-evidence="${id}">${esc(r.evidence)}</textarea><details><summary>Proposed situations (${situations.length})</summary>${situations.length?'<ul class="unified-proposals">'+situations.map(o=>'<li>'+esc(evidence(o))+'</li>').join('')+'</ul>':'<p class="help">No saved situation mapped to this area.</p>'}<button type="button" class="btn secondary" data-unified-use="${id}" ${situations.length?'':'disabled'}>Use these situations as evidence</button></details></article>`}).join('');
-  corePanel.querySelectorAll('[data-unified-evidence]').forEach(el=>el.oninput=()=>{active().coreRatings[el.dataset.unifiedEvidence].evidence=el.value;renderReport()});
-  corePanel.querySelectorAll('[data-unified-use]').forEach(b=>b.onclick=()=>{const r=active().coreRatings[b.dataset.unifiedUse];if(r.evidence.trim()&&!confirm('Replace existing evidence with the proposed situations?'))return;r.evidence=ordered(active()).filter(o=>coreFor(o)===b.dataset.unifiedUse).map(evidence).join('\n');drawAssessment();renderReport();saveLocal()});
-  $('unifiedEnableMechanics').checked=e.mechanicsEnabled;
-  $('unifiedMechanicsRows').innerHTML=e.mechanicsEnabled?MECH.map((name,i)=>`<article class="unified-core-row"><h3>${esc(name)}</h3><div class="unified-ratings" role="group" aria-label="${esc(name)} rating">${ratingButtons(e.mechanicsRatings[i],i,'mechanics')}</div><textarea data-unified-mech="${i}" aria-label="Mechanics evidence">${esc(e.mechanicsRatings[i].evidence)}</textarea></article>`).join(''):'';
-  $('unifiedMechanicsRows').querySelectorAll('[data-unified-mech]').forEach(el=>el.oninput=()=>{active().mechanicsRatings[+el.dataset.unifiedMech].evidence=el.value;renderReport()});
-  document.querySelectorAll('[data-unified-rate]').forEach(b=>b.onclick=()=>{if(b.dataset.unifiedType==='core')active().coreRatings[b.dataset.unifiedKey].rating=b.dataset.unifiedRate;else active().mechanicsRatings[+b.dataset.unifiedKey].rating=b.dataset.unifiedRate;drawAssessment();renderReport();saveLocal()});
-  keyboardRefresh();
+ const e=active();corePanel.innerHTML=CORE.map(([id,name])=>{const r=e.coreRatings[id],situations=ordered(e).filter(o=>coreFor(o)===id);return `<article class="unified-core-row"><h3>${id} — ${esc(name)}</h3><div class="unified-ratings" role="group" aria-label="${esc(name)} rating">${ratingButtons(r,id,'core')}</div><label class="smalllabel" for="unifiedEvidence${id}">Evaluator evidence</label><textarea id="unifiedEvidence${id}" data-unified-evidence="${id}">${esc(r.evidence)}</textarea><details><summary>Proposed situations (${situations.length})</summary>${situations.length?'<ul class="unified-proposals">'+situations.map(o=>'<li>'+esc(evidence(o))+'</li>').join('')+'</ul>':'<p class="help">No saved situation mapped to this area.</p>'}<button type="button" class="btn secondary" data-unified-use="${id}" ${situations.length?'':'disabled'}>Use these situations as evidence</button></details></article>`}).join('');
+ corePanel.querySelectorAll('[data-unified-evidence]').forEach(el=>el.oninput=()=>{active().coreRatings[el.dataset.unifiedEvidence].evidence=el.value;renderReport()});
+ corePanel.querySelectorAll('[data-unified-use]').forEach(b=>b.onclick=()=>{const r=active().coreRatings[b.dataset.unifiedUse];if(r.evidence.trim()&&!confirm('Replace existing evidence with the proposed situations?'))return;r.evidence=ordered(active()).filter(o=>coreFor(o)===b.dataset.unifiedUse).map(evidence).join('\n');drawAssessment();renderReport();saveLocal()});
+ $('unifiedEnableMechanics').checked=e.mechanicsEnabled;
+ $('unifiedMechanicsRows').innerHTML=e.mechanicsEnabled?MECH.map((name,i)=>`<article class="unified-core-row"><h3>${esc(name)}</h3><div class="unified-ratings" role="group" aria-label="${esc(name)} rating">${ratingButtons(e.mechanicsRatings[i],i,'mechanics')}</div><textarea data-unified-mech="${i}" aria-label="Mechanics evidence">${esc(e.mechanicsRatings[i].evidence)}</textarea></article>`).join(''):'';
+ $('unifiedMechanicsRows').querySelectorAll('[data-unified-mech]').forEach(el=>el.oninput=()=>{active().mechanicsRatings[+el.dataset.unifiedMech].evidence=el.value;renderReport()});
+ document.querySelectorAll('[data-unified-rate]').forEach(b=>b.onclick=()=>{if(b.dataset.unifiedType==='core')active().coreRatings[b.dataset.unifiedKey].rating=b.dataset.unifiedRate;else active().mechanicsRatings[+b.dataset.unifiedKey].rating=b.dataset.unifiedRate;drawAssessment();renderReport();saveLocal()});
+ keyboardRefresh();
  }
  $('unifiedEnableMechanics').onchange=e=>{active().mechanicsEnabled=e.target.checked;drawAssessment();renderReport()};
  $('unifiedProposeLong').onclick=()=>{let n=0;active().ratings.forEach((r,i)=>{const situations=ordered(active()).filter(o=>o.category===i);if(situations.length&&!r.evidence.trim()){r.evidence=situations.map(evidence).join('\n');n++}});syncRatings();toast(n+' evidence fields filled; ratings unchanged.');saveLocal()};
@@ -413,16 +429,24 @@ loadActive();
  fr:{title:'Rapports synthétiques par arbitre',empty:'Aucune observation n’a été consignée. Les éléments disponibles ne permettent pas de formuler une évaluation de la prestation.',intro:n=>`L’évaluation s’appuie sur ${n} observation(s) consignée(s).`,strength:s=>'Les points forts documentés concernent '+s+'.',weak:s=>'Les principaux axes de progression concernent '+s+'.',review:'Les situations douteuses ou à revoir doivent être vérifiées avant toute conclusion définitive.',priority:s=>'Priorité : revoir les situations documentées concernant '+s+' et définir une correction concrète pour le prochain match.',maintain:'Maintenir les pratiques positives documentées pendant le match.',mech:'Un complément sur la mécanique figure dans l’évaluation complète.',areas:{CNT:'le jugement des contacts',RUL:'les règles et violations',COV:'la couverture et les responsabilités',CTL:'le contrôle du match',COOP:'la coopération arbitrale',ADM:'l’administration du jeu'}},
  lb:{title:'Kuerz Rapporte pro Arbitter',empty:'Keng Observatioune goufen dokumentéiert. Et gëtt net genuch Beweiser fir eng Bewäertung vun der Leeschtung.',intro:n=>`D’Evaluatioun baséiert op ${n} dokumentéierten Observatiounen.`,strength:s=>'Déi dokumentéiert Stäerkte betreffen '+s+'.',weak:s=>'Déi wichtegst Verbesserungsberäicher betreffen '+s+'.',review:'Zweifelhaft Situatioune musse virun enger definitiver Conclusioun iwwerpréift ginn.',priority:s=>'Prioritéit: déi dokumentéiert Situatioune fir '+s+' iwwerpréiwen an eng konkret Verbesserung fir den nächste Match festleeën.',maintain:'Déi dokumentéiert positiv Praktiken aus dem Match bäibehalen.',mech:'Zousätzleche Feedback iwwer d’Mechanik steet an der kompletter Evaluatioun.',areas:{CNT:'d’Bewäertung vun de Kontakter',RUL:'d’Reegelen a Violatiounen',COV:'d’Ofdeckung a Verantwortung',CTL:'d’Kontroll vum Match',COOP:'d’Zesummenaarbecht',ADM:'d’Spilladministratioun'}}
  };
+
  function autoReport(e){
-  init(e);const L=LANG[Match.game.language]||LANG.en,obs=ordered(e),pos=obs.filter(o=>['Positive','Correct'].includes(o.assessment)),neg=obs.filter(o=>['Incorrect','Missed','Late'].includes(o.assessment)),rev=obs.filter(o=>['Doubtful','To review'].includes(o.assessment));
+  init(e);const lang=Match.game.language||'en',L=LANG[lang]||LANG.en;
+  const labels=lang==='fr'?['Point fort','À améliorer','Priorité']:lang==='lb'?['Stäerkt','Verbesserung','Prioritéit']:['Strength','Improve','Priority'];
+  const obs=ordered(e),pos=obs.filter(o=>['Positive','Correct'].includes(o.assessment)),neg=obs.filter(o=>['Incorrect','Missed','Late'].includes(o.assessment)),rev=obs.filter(o=>['Doubtful','To review'].includes(o.assessment));
   const ids=a=>a.map(coreFor).filter(Boolean),good=[...new Set([...ids(pos),...CORE.filter(([id])=>e.coreRatings[id].rating==='+2').map(([id])=>id)])],weak=[...new Set([...ids(neg),...CORE.filter(([id])=>['-2','-4','-5'].includes(e.coreRatings[id].rating)).map(([id])=>id)])];
-  if(!obs.length&&!good.length&&!weak.length)return L.empty;
-  const sentences=[];if(obs.length)sentences.push(L.intro(obs.length));if(good.length)sentences.push(L.strength(good.slice(0,2).map(id=>L.areas[id]).join('; ')));if(weak.length)sentences.push(L.weak(weak.slice(0,2).map(id=>L.areas[id]).join('; ')));if(rev.length)sentences.push(L.review);
-  const ex=neg.find(o=>chars(o.remark||o.situation||'')<=160);if(ex)sentences.push(evidence(ex));
-  if(weak.length)sentences.push(L.priority(L.areas[weak[0]]));else if(good.length)sentences.push(L.maintain);
-  if(e.mechanicsEnabled&&e.mechanicsRatings.some(r=>r.rating!=='N/O'||r.evidence.trim()))sentences.push(L.mech);
-  let text='';sentences.forEach(sentence=>{const shortened=compactReport(sentence);const next=text?text+' '+shortened:shortened;if(chars(next)<=1000)text=next});return text||L.empty;
+  if(e.mechanicsEnabled){if(e.mechanicsRatings.some(r=>r.rating==='+2'))good.push('MEC');if(e.mechanicsRatings.some(r=>['-2','-4','-5'].includes(r.rating)))weak.push('MEC')}
+  const none=lang==='fr'?'Non documenté.':lang==='lb'?'Net dokumentéiert.':'Not documented.';
+  if(!obs.length&&!good.length&&!weak.length)return '• '+(lang==='fr'?'Éléments insuffisants pour une évaluation.':lang==='lb'?'Net genuch Beweiser fir eng Evaluatioun.':'Insufficient evidence for an evaluation.');
+  const area=id=>id==='MEC'?(lang==='fr'?'la mécanique':lang==='lb'?'d’Mechanik':'mechanics'):(L.areas[id]||id);
+  let strength=good.length?good.slice(0,2).map(area).join('; ')+'.':none;
+  let improve=weak.length?weak.slice(0,2).map(area).join('; ')+'.':rev.length?(lang==='fr'?'Vérifier les situations à revoir; aucune erreur confirmée.':lang==='lb'?'Situatiounen iwwerpréiwen; kee bestätegte Feeler.':'Verify review situations; no confirmed error.'):none;
+  const ex=neg[0]||rev[0];if(ex)improve+=' ('+ex.period+' '+ex.time+')';
+  let priority=weak.length?(lang==='fr'?'Revoir '+area(weak[0])+'; appliquer une correction concrète.':lang==='lb'?area(weak[0])+' iwwerpréiwen an eng konkret Verbesserung ëmsetzen.':'Review '+area(weak[0])+'; apply a concrete correction.'):rev.length?(lang==='fr'?'Vérifier la vidéo avant de conclure.':lang==='lb'?'De Video virun enger Conclusioun iwwerpréiwen.':'Check video before concluding.'):good.length?(lang==='fr'?'Maintenir les pratiques positives observées.':lang==='lb'?'Déi positiv Praktike bäibehalen.':'Maintain the documented positive practices.'):none;
+  const entered=String(e.comments.priorities||'').split(/\n+/).map(x=>x.trim()).find(Boolean);if(entered&&chars(entered)<=180)priority=entered;
+  return [strength,improve,priority].map((text,i)=>'• '+labels[i]+': '+compactReport(text)).join('\n');
  }
+
  const editor=document.createElement('article');editor.className='card noPrint unified-editor';editor.style.marginBottom='16px';editor.innerHTML='<h3>Short report for the selected referee</h3><p class="help">Maximum 1,000 characters, including spaces, punctuation and line breaks. Names and match metadata are outside the limit. Internal notes and detailed records remain in the JSON evaluation.</p><label class="smalllabel" for="unifiedShortText">Report text — edit or paste an AI draft</label><textarea id="unifiedShortText" style="min-height:170px"></textarea><div id="unifiedShortCount" role="status"></div><button type="button" class="btn secondary" id="unifiedDraft">Generate concise draft</button><p class="help">AI is not connected automatically. Copy the prompt, use your AI service, then paste the draft here and review it.</p>';
  $('reportSheet').before(editor);const compactButton=document.createElement('button');compactButton.type='button';compactButton.className='btn secondary';compactButton.textContent='Use FIBA abbreviations';$('unifiedDraft').after(compactButton);compactButton.onclick=()=>{active().shortReportMode='manual';active().shortReport=compactReport($('unifiedShortText').value);drawEditor();renderReport();saveLocal()};
  function updateCount(){const n=chars($('unifiedShortText').value);$('unifiedShortCount').textContent=n+' / 1,000 characters'+(n>1000?' — shorten before publishing':'');$('unifiedShortCount').classList.toggle('unified-over',n>1000)}
@@ -439,13 +463,15 @@ loadActive();
  const priorParser=parseImportedMatch;
  parseImportedMatch=function(d){const m=priorParser(d),raw=d.version===2?d.evaluations:[d];m.evaluations.forEach((e,i)=>{const original=raw?.[i];if(original){e.coreRatings=original.coreRatings;e.mechanicsRatings=original.mechanicsRatings;e.mechanicsEnabled=original.mechanicsEnabled;e.shortReport=original.shortReport;e.shortReportMode=original.shortReportMode;e.pendingObservation=original.pendingObservation;e.videoDraft=original.videoDraft}init(e)});m.lastUsedPeriod=isTimedPeriod(d.lastUsedPeriod)?d.lastUsedPeriod:'Q1';return m};
 
+
  function stashRefereeDraft(){
-  const e=active();if(!edit&&!$('gameTime').value.trim()&&!$('situation').value.trim()&&!$('remark').value.trim()){delete e.pendingObservation;return}
-  e.pendingObservation={fields:Object.fromEntries(['period','gameTime','position','assessment','category','situation','remark'].map(id=>[id,$(id).value])),editId:edit||null,core:selectedCore,coreLocked:coreLock};
+ const e=active();if(!edit&&!$('gameTime').value.trim()&&!$('situation').value.trim()&&!$('remark').value.trim()){delete e.pendingObservation;return}
+ e.pendingObservation={fields:Object.fromEntries(['period','gameTime','position','assessment','category','situation','remark'].map(id=>[id,$(id).value])),editId:edit||null,core:selectedCore,coreLocked:coreLock};
  }
  function loadRefereeDraft(){const d=active().pendingObservation;if(!d)return;for(const id of ['period','gameTime','position','assessment','category','situation','remark'])if(d.fields?.[id]!==undefined)$(id).value=d.fields[id];if(d.editId&&S.obs.some(o=>o.id===d.editId)){edit=d.editId;$('formTitle').textContent='Edit observation';$('saveObs').textContent='Update'}selectedCore=d.core||'';coreLock=!!d.coreLocked;$('cancelEdit').hidden=false;drawObservationCore()}
  switchReferee=function(index){if(index===Match.active)return;if(listening||$('voiceReview')?.open){toast('Finish or cancel voice input before changing referee.');return}stashRefereeDraft();commitActive();Match.active=index;resetForm();if(typeof voiceDefaults!=='undefined')voiceDefaults=null;loadActive();saveLocal();toast('Now evaluating '+(Match.evaluations[index].meta.referee||'selected referee'))};
  $('cancelEdit').onclick=()=>{delete active().pendingObservation;resetForm();saveLocal()};
+
 
  const priorLoad=loadActive;
  loadActive=function(){if(isTimedPeriod(Match.lastUsedPeriod))lastPeriod=Match.lastUsedPeriod;priorLoad();$('period').value=lastPeriod;selectedCore='';coreLock=false;drawObservationCore();drawAssessment();drawEditor();renderReport();keyboardRefresh();loadRefereeDraft()};
@@ -455,19 +481,20 @@ loadActive();
  if($('obsRows'))$('obsRows').addEventListener('click',e=>{const b=e.target.closest('[data-edit]');if(b)queueMicrotask(()=>{const o=S.obs.find(o=>o.id===b.dataset.edit);selectedCore=o?coreFor(o):'';coreLock=!!selectedCore;drawObservationCore()})});
  // Desktop roving Tab stops. Replace old group key handlers by intercepting key events.
 
+
  function buttons(group){const bs=[...group.querySelectorAll('button')].filter(b=>!b.disabled);if(['positionButtons','vpositionButtons'].includes(group.id)){const order=['Lead','Centre','Trail','Both / Crew','—'];bs.sort((a,b)=>order.indexOf(a.dataset.value)-order.indexOf(b.dataset.value))}return bs}
  function keyboardRefresh(){
-  document.querySelectorAll(groupSelector).forEach(group=>{const bs=buttons(group);if(!bs.length)return;if(['positionButtons','vpositionButtons'].includes(group.id)&&bs.some((b,i)=>group.children[i]!==b))bs.forEach(b=>group.append(b));const current=bs.find(b=>b===document.activeElement)||bs.find(b=>b.getAttribute('aria-pressed')==='true')||bs[0];bs.forEach((b,i)=>{b.tabIndex=b===current?0:-1;const existingBadge=b.querySelector('.unified-key-number');if(existingBadge&&existingBadge.textContent!==String(i+1))existingBadge.textContent=String(i+1);if(!existingBadge){const badge=document.createElement('span');badge.className='unified-key-number';badge.textContent=String(i+1);badge.setAttribute('aria-hidden','true');b.append(badge)}})});
+ document.querySelectorAll(groupSelector).forEach(group=>{const bs=buttons(group);if(!bs.length)return;if(['positionButtons','vpositionButtons'].includes(group.id)&&bs.some((b,i)=>group.children[i]!==b))bs.forEach(b=>group.append(b));const current=bs.find(b=>b===document.activeElement)||bs.find(b=>b.getAttribute('aria-pressed')==='true')||bs[0];bs.forEach((b,i)=>{b.tabIndex=b===current?0:-1;const existingBadge=b.querySelector('.unified-key-number');if(existingBadge&&existingBadge.textContent!==String(i+1))existingBadge.textContent=String(i+1);if(!existingBadge){const badge=document.createElement('span');badge.className='unified-key-number';badge.textContent=String(i+1);badge.setAttribute('aria-hidden','true');b.append(badge)}})});
  }
  document.addEventListener('keydown',e=>{
-  if(e.altKey||e.ctrlKey||e.metaKey)return;
-  const group=e.target.closest?.(groupSelector);if(!group||e.target.tagName!=='BUTTON')return;
-  const bs=buttons(group),index=bs.indexOf(e.target);if(index<0)return;
-  let next=-1;
-  if(/^[1-9]$/.test(e.key))next=Number(e.key)-1;
-  else if(e.key==='Home')next=0;else if(e.key==='End')next=bs.length-1;
-  else if(['ArrowLeft','ArrowUp','ArrowRight','ArrowDown'].includes(e.key))next=(index+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+bs.length)%bs.length;
-  if(next<0||next>=bs.length)return;e.preventDefault();e.stopImmediatePropagation();const label=group.getAttribute('aria-label'),id=group.id;bs[next].focus();bs[next].click();keyboardRefresh();if(!group.isConnected){const replacement=id?document.getElementById(id):[...document.querySelectorAll(groupSelector)].find(g=>label&&g.getAttribute('aria-label')===label);if(replacement){buttons(replacement)[next]?.focus();keyboardRefresh()}}
+ if(e.altKey||e.ctrlKey||e.metaKey)return;
+ const group=e.target.closest?.(groupSelector);if(!group||e.target.tagName!=='BUTTON')return;
+ const bs=buttons(group),index=bs.indexOf(e.target);if(index<0)return;
+ let next=-1;
+ if(/^[1-9]$/.test(e.key))next=Number(e.key)-1;
+ else if(e.key==='Home')next=0;else if(e.key==='End')next=bs.length-1;
+ else if(['ArrowLeft','ArrowUp','ArrowRight','ArrowDown'].includes(e.key))next=(index+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+bs.length)%bs.length;
+ if(next<0||next>=bs.length)return;e.preventDefault();e.stopImmediatePropagation();const label=group.getAttribute('aria-label'),id=group.id;bs[next].focus();bs[next].click();keyboardRefresh();if(!group.isConnected){const replacement=id?document.getElementById(id):[...document.querySelectorAll(groupSelector)].find(g=>label&&g.getAttribute('aria-label')===label);if(replacement){buttons(replacement)[next]?.focus();keyboardRefresh()}}
  },true);
  document.addEventListener('focusin',e=>{if(e.target.tagName==='BUTTON'&&e.target.closest(groupSelector)){e.target.classList.add('unified-keyboard-focus');keyboardRefresh()}});
  document.addEventListener('focusout',e=>e.target.classList?.remove('unified-keyboard-focus'));
@@ -486,9 +513,9 @@ loadActive();
  function saveStatus(text,error=false){$('unifiedSaveStatus').textContent=text;$('unifiedSaveStatus').className=error?'error':''}
  function draft(){return {fields:Object.fromEntries(fieldIds.map(id=>[id,$(id)?.value||''])),editId:edit||null,core:selectedCore,coreLocked:coreLock,view:document.querySelector('.view.active')?.id.replace(/View$/,''),voiceOpen:!!$('voiceReview')?.open,voice:Object.fromEntries(voiceIds.map(id=>[id,$(id)?.value||''])),voiceDefaults:typeof voiceDefaults!=='undefined'?voiceDefaults:null}}
  function saveLocal(){
-  if(!storageReady||writing)return;writing=true;
-  try{stashRefereeDraft();commitActive();Match.lastUsedPeriod=lastPeriod;const snapshot={format:'refeval-recovery',version:1,savedAt:new Date().toISOString(),match:copy(Match),draft:draft()};const previous=localStorage.getItem(KEY);if(previous)localStorage.setItem(BACKUP,previous);localStorage.setItem(KEY,JSON.stringify(snapshot));saveStatus('Saved locally at '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'}));}
-  catch(error){saveStatus('Local save failed — export JSON now.',true)}finally{writing=false}
+ if(!storageReady||writing)return;writing=true;
+ try{stashRefereeDraft();commitActive();Match.lastUsedPeriod=lastPeriod;const snapshot={format:'refeval-recovery',version:1,savedAt:new Date().toISOString(),match:copy(Match),draft:draft()};const previous=localStorage.getItem(KEY);if(previous)localStorage.setItem(BACKUP,previous);localStorage.setItem(KEY,JSON.stringify(snapshot));saveStatus('Saved locally at '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'}));}
+ catch(error){saveStatus('Local save failed — export JSON now.',true)}finally{writing=false}
  }
  window.refevalSaveLocal=saveLocal;
  function queueSave(){if(!storageReady||saveQueued)return;saveQueued=true;queueMicrotask(()=>{saveQueued=false;saveLocal()})}
@@ -498,34 +525,35 @@ loadActive();
  $('unifiedSaveNow').onclick=saveLocal;
  $('unifiedClearSaved').onclick=()=>{if(!confirm('Delete local recovery copies? Current on-screen work stays available. Export JSON first if needed.'))return;try{localStorage.removeItem(KEY);localStorage.removeItem(BACKUP);storageReady=false;saveStatus('Local recovery cleared. Use Save locally now to enable it again.');$('unifiedSaveNow').onclick=()=>{storageReady=true;saveLocal()}}catch{saveStatus('Could not clear local storage.',true)}};
  function restore(snapshot){
-  Match=parseImportedMatch(snapshot.match);lastPeriod=Match.lastUsedPeriod;resetForm();loadActive();const d=snapshot.draft||{};
-  if(d.editId&&S.obs.some(o=>o.id===d.editId)){edit=d.editId;$('formTitle').textContent='Edit observation';$('saveObs').textContent='Update';$('cancelEdit').hidden=false}
-  for(const [id,value] of Object.entries(d.fields||{}))if(fieldIds.includes(id)&&$(id))$(id).value=value;
-  selectedCore=d.core||'';coreLock=!!d.coreLocked;drawObservationCore();if(['setup','remarks','criteria','report'].includes(d.view))show(d.view);
-  if(d.voiceOpen&&$('voiceReview')){for(const [id,value] of Object.entries(d.voice||{}))if(voiceIds.includes(id)&&$(id))$(id).value=value;if(typeof voiceDefaults!=='undefined')voiceDefaults=d.voiceDefaults||formDefaults();if(typeof reviewOrigin!=='undefined')reviewOrigin=edit;$('confirmVoice').textContent=edit?'Confirm & update observation':'Confirm & add observation';$('voiceReview').showModal()}
-  drawAssessment();drawEditor();renderReport();keyboardRefresh();storageReady=true;saveLocal();
+ Match=parseImportedMatch(snapshot.match);lastPeriod=Match.lastUsedPeriod;resetForm();loadActive();const d=snapshot.draft||{};
+ if(d.editId&&S.obs.some(o=>o.id===d.editId)){edit=d.editId;$('formTitle').textContent='Edit observation';$('saveObs').textContent='Update';$('cancelEdit').hidden=false}
+ for(const [id,value] of Object.entries(d.fields||{}))if(fieldIds.includes(id)&&$(id))$(id).value=value;
+ selectedCore=d.core||'';coreLock=!!d.coreLocked;drawObservationCore();if(['setup','remarks','criteria','report'].includes(d.view))show(d.view);
+ if(d.voiceOpen&&$('voiceReview')){for(const [id,value] of Object.entries(d.voice||{}))if(voiceIds.includes(id)&&$(id))$(id).value=value;if(typeof voiceDefaults!=='undefined')voiceDefaults=d.voiceDefaults||formDefaults();if(typeof reviewOrigin!=='undefined')reviewOrigin=edit;$('confirmVoice').textContent=edit?'Confirm & update observation':'Confirm & add observation';$('voiceReview').showModal()}
+ drawAssessment();drawEditor();renderReport();keyboardRefresh();storageReady=true;saveLocal();
  }
  function readRecovery(key){const raw=localStorage.getItem(key);if(!raw)return null;const d=JSON.parse(raw);if(d.format!=='refeval-recovery'||d.version!==1||!d.match)throw Error('Invalid recovery copy');parseImportedMatch(d.match);return d}
  function recoveryLock(locked){document.querySelectorAll('.view,.crew-bar').forEach(el=>{el.inert=locked});$('unifiedSaveNow').disabled=locked;$('unifiedClearSaved').disabled=locked}
  function offerRecovery(){
-  let found=null,usedBackup=false;
-  try{const probe=KEY+':test';localStorage.setItem(probe,'1');localStorage.removeItem(probe);try{found=readRecovery(KEY)}catch{found=readRecovery(BACKUP);usedBackup=true}if(!found){found=readRecovery(BACKUP);usedBackup=!!found}if(!found){storageReady=true;saveStatus('Local recovery enabled. JSON export remains recommended.');return}}
-  catch{storageReady=false;saveStatus('Local storage unavailable — export JSON regularly.',true);return}
-  const banner=document.createElement('div');banner.id='unifiedRecovery';banner.className='unified-recovery noPrint';banner.innerHTML='<h3>Recover unfinished evaluation?</h3><p>'+esc(found.match.game?.game||'Unnamed game')+' · '+esc(found.savedAt)+(usedBackup?' · previous valid snapshot':'')+'</p><div class="actions"><button type="button" id="unifiedResume" class="btn primary">Resume evaluation</button><button type="button" id="unifiedStartFresh" class="btn secondary">Start a new evaluation</button></div><p class="help">Saved locally in this browser. No cloud synchronisation. Choose before entering new work.</p>';top.after(banner);recoveryLock(true);saveStatus('Recovery available — choose Resume or Start new.');
-  $('unifiedResume').onclick=()=>{try{restore(found);recoveryLock(false);banner.remove();toast('Evaluation and unfinished entry restored.')}catch{saveStatus('Recovery failed. Original saved copy retained.',true)}};
-  $('unifiedStartFresh').onclick=()=>{if(!confirm('Replace the saved draft with a new evaluation? The previous snapshot remains as a recovery backup.'))return;banner.remove();recoveryLock(false);storageReady=true;saveLocal()};
+ let found=null,usedBackup=false;
+ try{const probe=KEY+':test';localStorage.setItem(probe,'1');localStorage.removeItem(probe);try{found=readRecovery(KEY)}catch{found=readRecovery(BACKUP);usedBackup=true}if(!found){found=readRecovery(BACKUP);usedBackup=!!found}if(!found){storageReady=true;saveStatus('Local recovery enabled. JSON export remains recommended.');return}}
+ catch{storageReady=false;saveStatus('Local storage unavailable — export JSON regularly.',true);return}
+ const banner=document.createElement('div');banner.id='unifiedRecovery';banner.className='unified-recovery noPrint';banner.innerHTML='<h3>Recover unfinished evaluation?</h3><p>'+esc(found.match.game?.game||'Unnamed game')+' · '+esc(found.savedAt)+(usedBackup?' · previous valid snapshot':'')+'</p><div class="actions"><button type="button" id="unifiedResume" class="btn primary">Resume evaluation</button><button type="button" id="unifiedStartFresh" class="btn secondary">Start a new evaluation</button></div><p class="help">Saved locally in this browser. No cloud synchronisation. Choose before entering new work.</p>';top.after(banner);recoveryLock(true);saveStatus('Recovery available — choose Resume or Start new.');
+ $('unifiedResume').onclick=()=>{try{restore(found);recoveryLock(false);banner.remove();toast('Evaluation and unfinished entry restored.')}catch{saveStatus('Recovery failed. Original saved copy retained.',true)}};
+ $('unifiedStartFresh').onclick=()=>{if(!confirm('Replace the saved draft with a new evaluation? The previous snapshot remains as a recovery backup.'))return;banner.remove();recoveryLock(false);storageReady=true;saveLocal()};
  }
  // Clear/new must create a new model, not reload and accidentally restore old work.
  function newEvaluation(){
-  if(!storageReady&&$('unifiedRecovery')){toast('Choose Resume or Start new in the recovery panel first.');return}
-  if(!confirm('Start a new evaluation and replace the current recovery draft? Export JSON first if needed.'))return;
-  if($('voiceReview')?.open)$('voiceReview').close();if(listening&&recognition)recognition.abort();
-  const count=Match.evaluations.length;Match={version:2,game:{game:'',competition:'',date:new Date().toISOString().slice(0,10),crew:count===3?'3PO':'2PO',language:Match.game.language||'en',evaluator:''},evaluations:Array.from({length:count},()=>emptyEvaluation()),active:0,lastUsedPeriod:'Q1'};
-  Match.evaluations.forEach(init);lastPeriod='Q1';edit=null;if(typeof voiceDefaults!=='undefined')voiceDefaults=null;resetForm();loadActive();show('setup');storageReady=true;saveLocal();
+ if(!storageReady&&$('unifiedRecovery')){toast('Choose Resume or Start new in the recovery panel first.');return}
+ if(!confirm('Start a new evaluation and replace the current recovery draft? Export JSON first if needed.'))return;
+ if($('voiceReview')?.open)$('voiceReview').close();if(listening&&recognition)recognition.abort();
+ const count=Match.evaluations.length;Match={version:2,game:{game:'',competition:'',date:new Date().toISOString().slice(0,10),crew:count===3?'3PO':'2PO',language:Match.game.language||'en',evaluator:''},evaluations:Array.from({length:count},()=>emptyEvaluation()),active:0,lastUsedPeriod:'Q1'};
+ Match.evaluations.forEach(init);lastPeriod='Q1';edit=null;if(typeof voiceDefaults!=='undefined')voiceDefaults=null;resetForm();loadActive();show('setup');storageReady=true;saveLocal();
  }
  $('newBtn').onclick=newEvaluation;$('clear').onclick=newEvaluation;
  Match.evaluations.forEach(init);Match.lastUsedPeriod=lastPeriod;drawAssessment();drawEditor();renderReport();keyboardRefresh();offerRecovery();
 })();
+
 
 </script>
 <script id="refeval-video-timeline-update">
@@ -537,26 +565,26 @@ loadActive();
  function parseTime(text){const t=String(text).trim();if(!t)return null;const m=t.match(/^(?:(\d+):)?([0-5]?\d):([0-5]\d)$/);if(!m)return NaN;return (Number(m[1]||0)*3600)+Number(m[2])*60+Number(m[3])}
  function blankTimeline(){return {version:1,startedAt:null,endedAt:null,anchors:Object.fromEntries(['Q1','Q2','Q3','Q4','OT1','OT2'].map(p=>[p,{liveMs:p==='Q1'?0:null,videoSeconds:null}])),clipBefore:10,clipAfter:10}}
  function cleanTimeline(data){
-  const t=blankTimeline();if(!data||typeof data!=='object')return t;
-  if(Number.isFinite(data.startedAt)&&data.startedAt>0)t.startedAt=data.startedAt;
-  if(t.startedAt&&Number.isFinite(data.endedAt)&&data.endedAt>=t.startedAt)t.endedAt=data.endedAt;
-  for(const [p,a] of Object.entries(data.anchors||{})){if(!validPeriod(p)||!a)continue;t.anchors[p]={liveMs:Number.isFinite(a.liveMs)&&a.liveMs>=0?a.liveMs:null,videoSeconds:Number.isFinite(a.videoSeconds)&&a.videoSeconds>=0?a.videoSeconds:null}}
-  for(const key of ['clipBefore','clipAfter'])if(Number.isFinite(data[key])&&data[key]>=0&&data[key]<=120)t[key]=data[key];return t;
+ const t=blankTimeline();if(!data||typeof data!=='object')return t;
+ if(Number.isFinite(data.startedAt)&&data.startedAt>0)t.startedAt=data.startedAt;
+ if(t.startedAt&&Number.isFinite(data.endedAt)&&data.endedAt>=t.startedAt)t.endedAt=data.endedAt;
+ for(const [p,a] of Object.entries(data.anchors||{})){if(!validPeriod(p)||!a)continue;t.anchors[p]={liveMs:Number.isFinite(a.liveMs)&&a.liveMs>=0?a.liveMs:null,videoSeconds:Number.isFinite(a.videoSeconds)&&a.videoSeconds>=0?a.videoSeconds:null}}
+ for(const key of ['clipBefore','clipAfter'])if(Number.isFinite(data[key])&&data[key]>=0&&data[key]<=120)t[key]=data[key];return t;
  }
  function timeline(){if(!Match.timeline||Match.timeline.version!==1)Match.timeline=cleanTimeline(Match.timeline);return Match.timeline}
  function currentRef(){return Match.evaluations[Match.active]}
  function persist(){if(typeof window.refevalSaveLocal==='function')window.refevalSaveLocal()}
  function elapsedMs(at=Date.now()){const t=timeline();return t.startedAt?Math.max(0,(t.endedAt?Math.min(at,t.endedAt):at)-t.startedAt):null}
  function videoReference(observation,t=timeline()){
-  if(!t.startedAt||!Number.isFinite(observation.incidentAt))return {seconds:null,reason:'No incident mark'};
-  const elapsed=observation.incidentAt-t.startedAt;if(elapsed<0)return {seconds:null,reason:'Incident predates game start'};
-  if(observation.period==='General')return {seconds:null,reason:'Choose a timed period for video alignment'};
-  let anchor=t.anchors[observation.period],used=observation.period,fallback=false;
-  if(!anchor||!Number.isFinite(anchor.liveMs)||!Number.isFinite(anchor.videoSeconds)){anchor=t.anchors.Q1;used='Q1';fallback=true}
-  if(!anchor||!Number.isFinite(anchor.liveMs)||!Number.isFinite(anchor.videoSeconds))return {seconds:null,reason:'Enter a video anchor'};
-  if(elapsed<anchor.liveMs)return {seconds:null,reason:'Incident is before the selected period anchor — check the timestamps'};
-  const seconds=anchor.videoSeconds+(elapsed-anchor.liveMs)/1000;
-  return {seconds,anchor:used,fallback,reason:fallback&&observation.period!=='Q1'?'Estimated from Q1; enter this period’s video anchor':'Aligned to '+used};
+ if(!t.startedAt||!Number.isFinite(observation.incidentAt))return {seconds:null,reason:'No incident mark'};
+ const elapsed=observation.incidentAt-t.startedAt;if(elapsed<0)return {seconds:null,reason:'Incident predates game start'};
+ if(observation.period==='General')return {seconds:null,reason:'Choose a timed period for video alignment'};
+ let anchor=t.anchors[observation.period],used=observation.period,fallback=false;
+ if(!anchor||!Number.isFinite(anchor.liveMs)||!Number.isFinite(anchor.videoSeconds)){anchor=t.anchors.Q1;used='Q1';fallback=true}
+ if(!anchor||!Number.isFinite(anchor.liveMs)||!Number.isFinite(anchor.videoSeconds))return {seconds:null,reason:'Enter a video anchor'};
+ if(elapsed<anchor.liveMs)return {seconds:null,reason:'Incident is before the selected period anchor — check the timestamps'};
+ const seconds=anchor.videoSeconds+(elapsed-anchor.liveMs)/1000;
+ return {seconds,anchor:used,fallback,reason:fallback&&observation.period!=='Q1'?'Estimated from Q1; enter this period’s video anchor':'Aligned to '+used};
  }
  function periodRank(p){const q=p.match(/^Q([1-4])$/),o=p.match(/^OT(\d+)$/);return q?+q[1]:o?4 + +o[1]:999}
  pv=periodRank;
@@ -569,34 +597,34 @@ loadActive();
  incident.innerHTML=`<div class="actions"><button type="button" id="videoMarkIncident" class="btn secondary">Mark incident now</button><button type="button" id="videoClearIncident" class="btn secondary">Clear incident mark</button><span id="videoIncidentInfo" class="help"></span></div><div class="video-incident-grid"><div class="field"><label for="videoIncidentElapsed">Incident elapsed time since jump ball</label><input id="videoIncidentElapsed" placeholder="HH:MM:SS"></div><div class="field"><label for="videoEstimatedPosition">Estimated video position</label><input id="videoEstimatedPosition" readonly placeholder="Add a video anchor in Setup"></div></div><div id="videoClipPreview" class="help"></div><p class="help">Mark when the incident happens, before typing. Voice start also marks it. Without an explicit mark, the first entry is timestamped automatically. A late mark can be corrected here. Official game-clock time remains separate.</p>`;
  const form=$('obsForm');const firstField=form.querySelector('.field');firstField.before(incident);
  function ensureOvertimeOptions(){
-  const needed=new Set(Object.keys(timeline().anchors).filter(p=>/^OT/.test(p)));
-  for(const e of Match.evaluations)for(const o of e.obs)if(/^OT[1-9]\d*$/.test(o.period))needed.add(o.period);
-  if(/^OT[1-9]\d*$/.test(Match.lastUsedPeriod||''))needed.add(Match.lastUsedPeriod);
-  for(const id of ['period','vperiod']){const select=$(id);if(!select)continue;const group=$(id+'Buttons');
-   for(const p of [...needed].sort((a,b)=>periodRank(a)-periodRank(b))){if([...select.options].some(o=>o.value===p))continue;const option=document.createElement('option');option.value=p;option.textContent=p;select.add(option,[...select.options].find(o=>o.value==='General')||null);
-    if(group){const b=document.createElement('button');b.type='button';b.className='choice-btn';b.dataset.value=p;b.textContent=p;b.setAttribute('aria-pressed','false');b.onclick=()=>{select.value=p;select.dispatchEvent(new Event('input',{bubbles:true}));select.dispatchEvent(new Event('change',{bubbles:true}))};const general=group.querySelector('[data-value="General"]');group.insertBefore(b,general||null)}
-   }
-   if(!select.dataset.videoOvertimeSync){const original=Object.getOwnPropertyDescriptor(select,'value'),native=Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype,'value');Object.defineProperty(select,'value',{configurable:true,get(){return (original?.get||native.get).call(this)},set(v){(original?.set||native.set).call(this,v);if(group)group.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===this.value)))}});select.dataset.videoOvertimeSync='true'}
-  }
+ const needed=new Set(Object.keys(timeline().anchors).filter(p=>/^OT/.test(p)));
+ for(const e of Match.evaluations)for(const o of e.obs)if(/^OT[1-9]\d*$/.test(o.period))needed.add(o.period);
+ if(/^OT[1-9]\d*$/.test(Match.lastUsedPeriod||''))needed.add(Match.lastUsedPeriod);
+ for(const id of ['period','vperiod']){const select=$(id);if(!select)continue;const group=$(id+'Buttons');
+ for(const p of [...needed].sort((a,b)=>periodRank(a)-periodRank(b))){if([...select.options].some(o=>o.value===p))continue;const option=document.createElement('option');option.value=p;option.textContent=p;select.add(option,[...select.options].find(o=>o.value==='General')||null);
+ if(group){const b=document.createElement('button');b.type='button';b.className='choice-btn';b.dataset.value=p;b.textContent=p;b.setAttribute('aria-pressed','false');b.onclick=()=>{select.value=p;select.dispatchEvent(new Event('input',{bubbles:true}));select.dispatchEvent(new Event('change',{bubbles:true}))};const general=group.querySelector('[data-value="General"]');group.insertBefore(b,general||null)}
+ }
+ if(!select.dataset.videoOvertimeSync){const original=Object.getOwnPropertyDescriptor(select,'value'),native=Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype,'value');Object.defineProperty(select,'value',{configurable:true,get(){return (original?.get||native.get).call(this)},set(v){(original?.set||native.set).call(this,v);if(group)group.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===this.value)))}});select.dataset.videoOvertimeSync='true'}
+ }
  }
  function refreshLive(){const t=timeline();$('videoStartGame').disabled=!!t.startedAt;$('videoEndGame').disabled=!t.startedAt||!!t.endedAt;$('videoElapsed').textContent=t.startedAt?(t.endedAt?'Ended · ':'Elapsed · ')+formatTime(elapsedMs()/1000):'Not started';$('videoStartInfo').textContent=t.startedAt?'Live jump-ball anchor: '+new Date(t.startedAt).toLocaleString()+'. Device clock changes can affect alignment.':''}
  function drawAnchors(){
-  ensureOvertimeOptions();const t=timeline();$('videoAnchorRows').innerHTML=Object.entries(t.anchors).sort(([a],[b])=>periodRank(a)-periodRank(b)).map(([p,a])=>`<tr><td>${p}</td><td><input data-video-live="${p}" aria-label="${p} live reference since jump ball" placeholder="Not marked" value="${a.liveMs===null?'':formatTime(a.liveMs/1000)}"></td><td><input data-video-offset="${p}" aria-label="${p} video timestamp" placeholder="Enter later" value="${a.videoSeconds===null?'':formatTime(a.videoSeconds)}"></td><td><button type="button" class="btn secondary" data-video-mark-period="${p}" ${!t.startedAt||t.endedAt?'disabled':''}>${p==='Q1'?'Re-mark opening anchor':'Mark '+p+' start'}</button></td></tr>`).join('');
-  document.querySelectorAll('[data-video-live],[data-video-offset]').forEach(input=>input.onchange=()=>{const parsed=parseTime(input.value);if(Number.isNaN(parsed)){input.setAttribute('aria-invalid','true');$('videoTimelineError').textContent='Use HH:MM:SS or M:SS with valid minutes and seconds.';return}input.removeAttribute('aria-invalid');$('videoTimelineError').textContent='';const p=input.dataset.videoLive||input.dataset.videoOffset;if(input.dataset.videoLive)timeline().anchors[p].liveMs=parsed===null?null:parsed*1000;else timeline().anchors[p].videoSeconds=parsed;persist();refreshIncident();renderObs()});
-  document.querySelectorAll('[data-video-mark-period]').forEach(b=>b.onclick=()=>{const p=b.dataset.videoMarkPeriod,a=timeline().anchors[p];if(a.liveMs!==null&&!confirm('Replace the live reference for '+p+'? Saved incident times stay unchanged.'))return;a.liveMs=elapsedMs();$('period').value=p;$('period').dispatchEvent(new Event('change',{bubbles:true}));if(!edit)Match.lastUsedPeriod=p;drawAnchors();refreshIncident();renderObs();persist()});
-  $('videoClipBefore').value=t.clipBefore;$('videoClipAfter').value=t.clipAfter;refreshLive();
+ ensureOvertimeOptions();const t=timeline();$('videoAnchorRows').innerHTML=Object.entries(t.anchors).sort(([a],[b])=>periodRank(a)-periodRank(b)).map(([p,a])=>`<tr><td>${p}</td><td><input data-video-live="${p}" aria-label="${p} live reference since jump ball" placeholder="Not marked" value="${a.liveMs===null?'':formatTime(a.liveMs/1000)}"></td><td><input data-video-offset="${p}" aria-label="${p} video timestamp" placeholder="Enter later" value="${a.videoSeconds===null?'':formatTime(a.videoSeconds)}"></td><td><button type="button" class="btn secondary" data-video-mark-period="${p}" ${!t.startedAt||t.endedAt?'disabled':''}>${p==='Q1'?'Re-mark opening anchor':'Mark '+p+' start'}</button></td></tr>`).join('');
+ document.querySelectorAll('[data-video-live],[data-video-offset]').forEach(input=>input.onchange=()=>{const parsed=parseTime(input.value);if(Number.isNaN(parsed)){input.setAttribute('aria-invalid','true');$('videoTimelineError').textContent='Use HH:MM:SS or M:SS with valid minutes and seconds.';return}input.removeAttribute('aria-invalid');$('videoTimelineError').textContent='';const p=input.dataset.videoLive||input.dataset.videoOffset;if(input.dataset.videoLive)timeline().anchors[p].liveMs=parsed===null?null:parsed*1000;else timeline().anchors[p].videoSeconds=parsed;persist();refreshIncident();renderObs()});
+ document.querySelectorAll('[data-video-mark-period]').forEach(b=>b.onclick=()=>{const p=b.dataset.videoMarkPeriod,a=timeline().anchors[p];if(a.liveMs!==null&&!confirm('Replace the live reference for '+p+'? Saved incident times stay unchanged.'))return;a.liveMs=elapsedMs();$('period').value=p;$('period').dispatchEvent(new Event('change',{bubbles:true}));if(!edit)Match.lastUsedPeriod=p;drawAnchors();refreshIncident();renderObs();persist()});
+ $('videoClipBefore').value=t.clipBefore;$('videoClipAfter').value=t.clipAfter;refreshLive();
  }
  function markIncident(source='marked now'){
-  const t=timeline();if(!t.startedAt){toast('Start the game timeline in Setup first.');return}if(t.endedAt){toast('The game timeline has ended. Edit an existing incident timestamp if needed.');return}
-  currentRef().videoDraft={incidentAt:Date.now(),source};refreshIncident();persist();
+ const t=timeline();if(!t.startedAt){toast('Start the game timeline in Setup first.');return}if(t.endedAt){toast('The game timeline has ended. Edit an existing incident timestamp if needed.');return}
+ currentRef().videoDraft={incidentAt:Date.now(),source};refreshIncident();persist();
  }
  function incidentObject(){return {period:$('period').value,incidentAt:currentRef().videoDraft?.incidentAt}}
  function refreshIncident(){
-  const d=currentRef().videoDraft,t=timeline(),reference=videoReference(incidentObject(),t);
-  $('videoIncidentElapsed').value=d&&t.startedAt?formatTime((d.incidentAt-t.startedAt)/1000):'';
-  $('videoEstimatedPosition').value=reference.seconds===null?'':formatTime(reference.seconds);
-  $('videoIncidentInfo').textContent=d?'Incident captured · '+d.source:!t.startedAt?'Start the timeline in Setup to enable incident marks.':'No incident marked yet.';
-  $('videoClipPreview').textContent=reference.seconds===null?reference.reason:'Clip '+formatTime(Math.max(0,reference.seconds-t.clipBefore))+' → '+formatTime(reference.seconds+t.clipAfter)+' · '+reference.reason;
+ const d=currentRef().videoDraft,t=timeline(),reference=videoReference(incidentObject(),t);
+ $('videoIncidentElapsed').value=d&&t.startedAt?formatTime((d.incidentAt-t.startedAt)/1000):'';
+ $('videoEstimatedPosition').value=reference.seconds===null?'':formatTime(reference.seconds);
+ $('videoIncidentInfo').textContent=d?'Incident captured · '+d.source:!t.startedAt?'Start the timeline in Setup to enable incident marks.':'No incident marked yet.';
+ $('videoClipPreview').textContent=reference.seconds===null?reference.reason:'Clip '+formatTime(Math.max(0,reference.seconds-t.clipBefore))+' → '+formatTime(reference.seconds+t.clipAfter)+' · '+reference.reason;
  }
  $('videoStartGame').onclick=()=>{const t=timeline();if(t.startedAt)return;t.startedAt=Date.now();t.endedAt=null;t.anchors.Q1.liveMs=0;Match.lastUsedPeriod='Q1';$('period').value='Q1';$('period').dispatchEvent(new Event('change',{bubbles:true}));drawAnchors();refreshIncident();persist();toast('Jump-ball timeline started.')};
  $('videoEndGame').onclick=()=>{if(!confirm('End the live timeline? Existing incident marks and video anchors remain editable.'))return;timeline().endedAt=Date.now();drawAnchors();persist()};
@@ -627,6 +655,7 @@ loadActive();
 </script>
 <script id="refeval-video-keyboard-update">
 
+
 (function installTimelineKeyboard(){
  const card=document.getElementById('videoTimelineCard'),incident=document.getElementById('videoIncidentPanel');
  if(!card||!incident||document.getElementById('videoKeyboardHelp'))return;
@@ -643,37 +672,37 @@ loadActive();
  function setupGroup(group,label){group.classList.add('video-key-group');group.setAttribute('role','group');if(label)group.setAttribute('aria-label',label)}
  function choosePeriod(p){selectedPeriod=p;syncRows();syncButtons();selectedRow()?.scrollIntoView({behavior:'smooth',block:'nearest'});}
  function syncRows(){
-  const rows=[...$('videoAnchorRows').querySelectorAll('tr')];
-  if(!rows.some(row=>row.querySelector('[data-video-live]')?.dataset.videoLive===selectedPeriod))selectedPeriod=rows[0]?.querySelector('[data-video-live]')?.dataset.videoLive||'Q1';
-  rows.forEach(row=>{const p=row.querySelector('[data-video-live]')?.dataset.videoLive,selected=p===selectedPeriod;row.classList.toggle('video-anchor-selected',selected);row.querySelectorAll('input,button').forEach(el=>el.tabIndex=selected?0:-1);const action=row.querySelector('[data-video-mark-period]');if(action)setupGroup(action.closest('td'),p+' live-start action')});
+ const rows=[...$('videoAnchorRows').querySelectorAll('tr')];
+ if(!rows.some(row=>row.querySelector('[data-video-live]')?.dataset.videoLive===selectedPeriod))selectedPeriod=rows[0]?.querySelector('[data-video-live]')?.dataset.videoLive||'Q1';
+ rows.forEach(row=>{const p=row.querySelector('[data-video-live]')?.dataset.videoLive,selected=p===selectedPeriod;row.classList.toggle('video-anchor-selected',selected);row.querySelectorAll('input,button').forEach(el=>el.tabIndex=selected?0:-1);const action=row.querySelector('[data-video-mark-period]');if(action)setupGroup(action.closest('td'),p+' live-start action')});
  }
  function buildPeriodNavigation(){
-  const periods=[...$('videoAnchorRows').querySelectorAll('[data-video-live]')].map(el=>el.dataset.videoLive),next=periods.join('|');if(signature===next)return;signature=next;
-  const group=$('videoPeriodKeyboardButtons');group.replaceChildren();periods.forEach(p=>{const b=document.createElement('button');b.type='button';b.dataset.videoKeyboardPeriod=p;b.textContent=p;b.onclick=()=>choosePeriod(p);group.append(b)});
+ const periods=[...$('videoAnchorRows').querySelectorAll('[data-video-live]')].map(el=>el.dataset.videoLive),next=periods.join('|');if(signature===next)return;signature=next;
+ const group=$('videoPeriodKeyboardButtons');group.replaceChildren();periods.forEach(p=>{const b=document.createElement('button');b.type='button';b.dataset.videoKeyboardPeriod=p;b.textContent=p;b.onclick=()=>choosePeriod(p);group.append(b)});
  }
  function syncButtons(){
-  card.querySelectorAll('.actions').forEach((group,i)=>setupGroup(group,i===0?'Game timeline actions':'Overtime and clip export actions'));
-  incident.querySelectorAll('.actions').forEach(group=>setupGroup(group,'Incident timestamp actions'));
-  const groups=[...card.querySelectorAll('.video-key-group'),...incident.querySelectorAll('.video-key-group')];
-  groups.forEach(group=>{
-   const bs=enabled(group),row=group.closest('tr'),inactiveRow=row&&!row.classList.contains('video-anchor-selected');
-   if(group.id==='videoPeriodKeyboardButtons')bs.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.videoKeyboardPeriod===selectedPeriod)));
-   const current=bs.find(b=>b===document.activeElement)||bs.find(b=>b.getAttribute('aria-pressed')==='true')||bs[0];
-   bs.forEach((b,i)=>{b.tabIndex=!inactiveRow&&b===current?0:-1;let badge=b.querySelector('.video-key-badge');if(!badge){badge=document.createElement('span');badge.className='video-key-badge';badge.setAttribute('aria-hidden','true');b.append(badge)}if(badge.textContent!==String(i+1))badge.textContent=String(i+1)});
-   group.querySelectorAll('button:disabled').forEach(b=>b.tabIndex=-1);
-  });
+ card.querySelectorAll('.actions').forEach((group,i)=>setupGroup(group,i===0?'Game timeline actions':'Overtime and clip export actions'));
+ incident.querySelectorAll('.actions').forEach(group=>setupGroup(group,'Incident timestamp actions'));
+ const groups=[...card.querySelectorAll('.video-key-group'),...incident.querySelectorAll('.video-key-group')];
+ groups.forEach(group=>{
+ const bs=enabled(group),row=group.closest('tr'),inactiveRow=row&&!row.classList.contains('video-anchor-selected');
+ if(group.id==='videoPeriodKeyboardButtons')bs.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.videoKeyboardPeriod===selectedPeriod)));
+ const current=bs.find(b=>b===document.activeElement)||bs.find(b=>b.getAttribute('aria-pressed')==='true')||bs[0];
+ bs.forEach((b,i)=>{b.tabIndex=!inactiveRow&&b===current?0:-1;let badge=b.querySelector('.video-key-badge');if(!badge){badge=document.createElement('span');badge.className='video-key-badge';badge.setAttribute('aria-hidden','true');b.append(badge)}if(badge.textContent!==String(i+1))badge.textContent=String(i+1)});
+ group.querySelectorAll('button:disabled').forEach(b=>b.tabIndex=-1);
+ });
  }
  function refresh(){buildPeriodNavigation();syncRows();syncButtons()}
  document.addEventListener('keydown',event=>{
-  if(event.altKey||event.ctrlKey||event.metaKey||event.target.tagName!=='BUTTON')return;
-  const group=event.target.closest('.video-key-group');if(!group||(!card.contains(group)&&!incident.contains(group)))return;
-  const bs=enabled(group),index=bs.indexOf(event.target);if(index<0)return;let next=-1;
-  if(/^[1-9]$/.test(event.key))next=Number(event.key)-1;
-  else if(event.key==='Home')next=0;else if(event.key==='End')next=bs.length-1;
-  else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key))next=(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:-1)+bs.length)%bs.length;
-  if(next<0||next>=bs.length)return;event.preventDefault();event.stopImmediatePropagation();bs[next].focus();
-  if(group.id==='videoPeriodKeyboardButtons')bs[next].click();
-  syncButtons();
+ if(event.altKey||event.ctrlKey||event.metaKey||event.target.tagName!=='BUTTON')return;
+ const group=event.target.closest('.video-key-group');if(!group||(!card.contains(group)&&!incident.contains(group)))return;
+ const bs=enabled(group),index=bs.indexOf(event.target);if(index<0)return;let next=-1;
+ if(/^[1-9]$/.test(event.key))next=Number(event.key)-1;
+ else if(event.key==='Home')next=0;else if(event.key==='End')next=bs.length-1;
+ else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key))next=(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:-1)+bs.length)%bs.length;
+ if(next<0||next>=bs.length)return;event.preventDefault();event.stopImmediatePropagation();bs[next].focus();
+ if(group.id==='videoPeriodKeyboardButtons')bs[next].click();
+ syncButtons();
  },true);
  document.addEventListener('focusin',event=>{if(event.target.tagName==='BUTTON'&&event.target.closest('.video-key-group')){event.target.classList.add('video-key-focus');syncButtons()}});
  document.addEventListener('focusout',event=>event.target.classList?.remove('video-key-focus'));
@@ -685,5 +714,55 @@ loadActive();
  refresh();
 })();
 
+
+</script>
+<script id="refeval-observation-reassignment-update">
+(function installObservationReassignment(){
+ if(typeof Match==='undefined'||document.getElementById('refevalReassignDialog'))return;const $=id=>document.getElementById(id),dialog=document.createElement('dialog');dialog.id='refevalReassignDialog';dialog.setAttribute('aria-labelledby','reassignTitle');
+ dialog.innerHTML='<div class="review-body"><div class="review-top"><h2 id="reassignTitle">Reassign observation</h2><button id="reassignClose" class="iconbtn" type="button" aria-label="Cancel reassignment">×</button></div><p id="reassignSource"></p><div id="reassignSummary" class="transcript"></div><div class="field" style="margin-top:16px"><label for="reassignTarget">Move to referee</label><select id="reassignTarget"></select></div><p id="reassignConfirmation" class="notice" style="margin-top:14px"></p><p class="help">Only this observation moves. ID, notes, assessment, criterion and all timestamps stay intact. Ratings, copied evidence and manually edited reports are not moved or changed; review them separately.</p><p id="reassignError" class="error" role="alert"></p></div><div class="review-footer"><button id="reassignCancel" type="button" class="btn secondary">Cancel</button><button id="reassignConfirm" type="button" class="btn primary">Confirm reassignment</button></div>';
+ document.body.append(dialog);let selected=null,returnFocus=null;
+ const name=i=>String(Match.evaluations[i]?.meta.referee||'').trim()||'Unnamed referee';
+ function close(){dialog.close();selected=null;if(returnFocus?.isConnected)returnFocus.focus()}
+ function labels(){if(!selected)return;const target=Number($('reassignTarget').value);$('reassignConfirmation').textContent='Move this observation from '+name(selected.source)+' to '+name(target)+'?';$('reassignConfirm').textContent='Move to '+name(target)}
+ function open(id,button){
+  if(typeof listening!=='undefined'&&listening||$('voiceReview')?.open)return toast('Finish or cancel voice input first.');
+  commitActive();const source=Match.active,o=Match.evaluations[source].obs.find(o=>o.id===id);if(!o)return;
+  if(edit===id||Match.evaluations[source].pendingObservation?.editId===id)return toast('Save or cancel this observation’s edit first.');
+  const targets=Match.evaluations.map((e,i)=>i).filter(i=>i!==source&&String(Match.evaluations[i].meta.referee||'').trim());if(!targets.length)return toast('Enter the other referee names in Setup.');
+  selected={source,id};returnFocus=button;$('reassignSource').textContent='Currently assigned to '+name(source);$('reassignSummary').textContent=[o.period+' '+o.time+' · '+o.position+' · '+o.assessment,o.situation,o.remark].filter(Boolean).join('\n');$('reassignTarget').replaceChildren();targets.forEach(i=>{const option=document.createElement('option');option.value=String(i);option.textContent=name(i);$('reassignTarget').append(option)});$('reassignError').textContent='';labels();dialog.showModal();$('reassignTarget').focus();
+ }
+ function moveObservation(model,selection,targetIndex,at){
+  if(!Number.isInteger(targetIndex)||targetIndex<0||targetIndex>=model.evaluations.length||targetIndex===selection.source)throw Error('Choose a different referee.');
+  const from=model.evaluations[selection.source],to=model.evaluations[targetIndex],o=from?.obs.find(o=>o.id===selection.id);if(!o)throw Error('Observation no longer exists.');if(to.obs.some(other=>other.id===o.id))throw Error('Duplicate observation ID. Nothing changed.');
+  const moved={...o,reassignmentHistory:[...(Array.isArray(o.reassignmentHistory)?o.reassignmentHistory:[]),{at,fromReferee:String(from.meta.referee||''),toReferee:String(to.meta.referee||'')}]};from.obs=from.obs.filter(o=>o.id!==selection.id);to.obs=[...to.obs,moved];return moved;
+ }
+ $('reassignTarget').onchange=labels;$('reassignConfirm').onclick=()=>{if(!selected)return;try{if(Match.active!==selected.source)throw Error('Active referee changed. Close and try again.');commitActive();const target=Number($('reassignTarget').value);moveObservation(Match,selected,target,new Date().toISOString());S.obs=Match.evaluations[Match.active].obs;commitActive();renderObs();renderReport();window.refevalSaveLocal?.();const to=name(target);close();toast('Moved to '+to+'. Review copied evidence and manual reports.')}catch(e){$('reassignError').textContent=e.message}};
+ $('reassignClose').onclick=close;$('reassignCancel').onclick=close;dialog.addEventListener('cancel',()=>selected=null);
+ function addButtons(){$('obsRows').querySelectorAll('tr').forEach(row=>{const edit=row.querySelector('[data-edit]');if(!edit||row.querySelector('[data-reassign]'))return;const b=document.createElement('button');b.type='button';b.className='rowbtn';b.dataset.reassign=edit.dataset.edit;b.textContent='Reassign';b.setAttribute('aria-label','Reassign this observation to another referee');b.onclick=()=>open(b.dataset.reassign,b);edit.parentElement.append(b)})}
+ const oldRender=renderObs;renderObs=function(){oldRender();addButtons()};addButtons();
+})();
+</script>
+<script id="refeval-fast-entry-update">
+(function installFastObservationEntry(){
+ const $=id=>document.getElementById(id),form=$('obsForm'),view=$('remarksView');if(!form||!view||$('refevalFastEntryToggle'))return;
+ const panel=document.createElement('div');panel.className='notice noPrint';panel.innerHTML='<label style="display:flex;align-items:center;gap:8px"><input id="refevalFastEntryToggle" type="checkbox" checked style="width:20px;min-height:20px"> Fast observation entry</label><small>Referee → period → game time → position → assessment → core → situation → remark → Add. Enter advances time/situation; Ctrl/Command+Enter adds from Remark.</small><div id="refevalFastEntryStatus" class="help" role="status" aria-live="polite"></div>';$('formTitle').after(panel);
+ const toggle=$('refevalFastEntryToggle'),steps=['referee','period','time','position','assessment','core','situation','remark','add'];let navigationKey='';
+ const visible=el=>!!el&&!el.disabled&&el.getClientRects().length>0;
+ function choose(group){if(!group)return null;const bs=[...group.querySelectorAll('button')].filter(visible);return bs.find(b=>b.getAttribute('aria-pressed')==='true')||bs[0]}
+ function target(step){if(step==='referee')return choose($('observationRefereeChoices'))||choose($('crewTabs'));if(step==='period')return choose($('periodButtons'))||$('period');if(step==='time')return $('period').value==='General'?target('position'):$('gameTime');if(step==='position')return choose($('positionButtons'))||$('position');if(step==='assessment')return choose($('assessmentButtons'))||$('assessment');if(step==='core')return choose($('categoryUnifiedCoreButtons'))||choose($('coreObservationButtons'));return $({situation:'situation',remark:'remark',add:'saveObs'}[step])}
+ function focusStep(step){if(!toggle.checked||!view.classList.contains('active')||$('voiceReview')?.open||$('refevalReassignDialog')?.open)return;const el=target(step);if(!visible(el))return;el.focus();el.scrollIntoView({behavior:'smooth',block:'nearest'});if(step==='time'&&el.id==='gameTime')el.select();$('refevalFastEntryStatus').textContent='Next: '+(step==='time'&&$('period').value==='General'?'position':step)}
+ function stepFor(button){if(button.closest('#observationRefereeChoices,#crewTabs'))return 'referee';if(button.closest('#periodButtons'))return 'period';if(button.closest('#positionButtons'))return 'position';if(button.closest('#assessmentButtons'))return 'assessment';if(button.closest('#categoryUnifiedCoreButtons,#coreObservationButtons'))return 'core';return null}
+ window.addEventListener('keydown',e=>{navigationKey=e.key;queueMicrotask(()=>navigationKey='');if(!toggle.checked||!view.classList.contains('active')||!form.contains(e.target))return;if(e.target.id==='remark'&&e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();e.stopImmediatePropagation();$('saveObs').click();return}if(e.key!=='Enter'||e.shiftKey||e.ctrlKey||e.metaKey||e.altKey)return;if(e.target.id==='gameTime'){e.preventDefault();e.stopImmediatePropagation();if($('period').value!=='General'&&!/^\d{1,2}:[0-5]\d$/.test($('gameTime').value.trim()))return $('formMsg').textContent='Enter game time as M:SS.';$('formMsg').textContent='';focusStep('position')}else if(e.target.id==='situation'){e.preventDefault();e.stopImmediatePropagation();focusStep('remark')}},true);
+ document.addEventListener('click',e=>{if(!toggle.checked||!view.classList.contains('active'))return;const b=e.target.closest('button');if(!b)return;const step=stepFor(b);if(!step||['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(navigationKey))return;const ref=step==='referee'?Number(b.dataset.observationRef??b.dataset.ref):null;queueMicrotask(()=>{if(step==='referee'&&Number.isInteger(ref)&&Match.active!==ref)return;focusStep(steps[steps.indexOf(step)+1]||'referee')})},true);
+ const oldSave=saveObservation;saveObservation=function(o){oldSave(o);queueMicrotask(()=>focusStep('referee'))};toggle.onchange=()=>{$('refevalFastEntryStatus').textContent=toggle.checked?'Fast entry enabled.':'Normal Tab navigation.'};
+})();
+</script>
+<script id="refeval-brief-report-prompt-update">
+(function installBriefReportPrompt(){
+ const $=id=>document.getElementById(id);
+ $('copyPrompt').onclick=()=>{commitActive();const language=Match.game.language==='fr'?'French':Match.game.language==='lb'?'Luxembourgish':'English';const rules=['Write in '+language+'.','Each referee: 3 brief bullets — Strength / Improve / Priority. If evidence is insufficient, say so without inventing findings.','Aim for 250–500 characters; maximum 1,000 including spaces and line breaks. Names are outside the limit.','Use only supplied evidence. Preserve uncertainty and keep referees separate.','Use established abbreviations where applicable. No introduction, tables, repetition or internal notes.'];
+ const context=Match.evaluations.map(e=>{const lines=['REFEREE: '+(e.meta.referee||'Name missing')];const ratings=Object.entries(e.coreRatings||{}).filter(([id,r])=>r&&r.rating!=='N/O').map(([id,r])=>id+' '+r.rating+(r.evidence?' — '+r.evidence:''));if(ratings.length)lines.push('Core: '+ratings.join('; '));for(const [key,label] of [['general','Note'],['visible','Feedback'],['priorities','Priorities']])if(e.comments[key]?.trim())lines.push(label+': '+e.comments[key].trim());e.obs.forEach(o=>lines.push('- '+[o.period,o.time,({Lead:'L',Centre:'C',Trail:'T'})[o.position]||o.position,o.assessment,o.core||C[o.category],[o.situation,o.remark].filter(Boolean).filter((v,i,a)=>a.indexOf(v)===i).join(' — ')].filter(Boolean).join(' | ')));if(e.mechanicsEnabled){const m=(e.mechanicsRatings||[]).filter(r=>r.rating!=='N/O'||r.evidence).map((r,i)=>r.rating+(r.evidence?' '+r.evidence:''));if(m.length)lines.push('Optional mechanics: '+m.join('; '))}return lines.join('\n')});copyText(rules.map(s=>'- '+s).join('\n')+'\n\n'+[Match.game.game,Match.game.date].filter(Boolean).join(' | ')+'\n\n'+context.join('\n\n'))};
+ if($('unifiedDraft'))$('unifiedDraft').textContent='Generate 3-bullet draft';const note=document.createElement('p');note.className='help';note.textContent='Short format: Strength • Improve • Priority. Existing manual drafts are preserved; use Generate 3-bullet draft to replace one after confirmation.';$('unifiedShortText').after(note);renderReport();
+})();
 </script>
 </body></html>
